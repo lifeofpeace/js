@@ -5,9 +5,9 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>一首小诗 | JavaScript 编码规范</title>
+        <title>命名 | JavaScript 编码规范</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="This file file serves as your book&#39;s preface, a great place to describe your book&#39;s content and ideas.">
+        <meta name="description" content="">
         <meta name="generator" content="GitBook 2.5.2">
         <meta name="author" content="itmyhome">
         
@@ -41,8 +41,10 @@
         
     
     
-    <link rel="next" href="chapter1.html" />
+    <link rel="next" href="zhu_shi.html" />
     
+    
+    <link rel="prev" href="yu_ju.html" />
     
 
         
@@ -59,14 +61,14 @@ A.info:hover    {color:green;background:transparent;text-decoration:underline}
 </style>
 <!-- <div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
 This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  (Unregistered) on  11/16/15 16:06:39.<br>
-<b>Address:</b> <a class="info" href="https://itmyhome.gitbooks.io/javascript/content/index.html">https://itmyhome.gitbooks.io/javascript/content/index.html</a><br>
-<b>Title:</b> 一首小诗 | JavaScript 编码规范 &nbsp;&bull;&nbsp; <b>Size:</b> 29629 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Mon, 16 Nov 2015 05:18:18 GMT<br></div>
+<b>Address:</b> <a class="info" href="https://itmyhome.gitbooks.io/javascript/content/ming_ming.html">https://itmyhome.gitbooks.io/javascript/content/ming_ming.html</a><br>
+<b>Title:</b> 命名 | JavaScript 编码规范 &nbsp;&bull;&nbsp; <b>Size:</b> 37755 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Mon, 16 Nov 2015 05:18:18 GMT<br></div>
 <!-- /Copyright � 2005. Spidersoft Ltd -->
 
 
         
         
-    <div class="book" data-level="0" data-chapter-title="一首小诗" data-filepath="README.md" data-basepath="." data-revision="Mon Nov 16 2015 05:18:59 GMT+0000 (UTC)">
+    <div class="book" data-level="2.3" data-chapter-title="命名" data-filepath="ming_ming.md" data-basepath="." data-revision="Mon Nov 16 2015 05:18:59 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -88,7 +90,7 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
 
             
     
-        <li class="chapter active" data-level="0" data-path="index.html">
+        <li class="chapter " data-level="0" data-path="index.html">
             
                 
                     <a href="index.html">
@@ -228,7 +230,7 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
             
         </li>
     
-        <li class="chapter " data-level="2.3" data-path="ming_ming.html">
+        <li class="chapter active" data-level="2.3" data-path="ming_ming.html">
             
                 
                     <a href="ming_ming.html">
@@ -1034,27 +1036,85 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="my-awesome-book">从前慢</h1>
-<p>记得早先少年时</p>
-<p>大家诚诚恳恳</p>
-<p>说一句 是一句</p>
-<p>清早上火车站</p>
-<p>长街黑暗无行人</p>
-<p>卖豆浆的小店冒着热气</p>
-<p>从前的日色变得慢</p>
-<p>车 马 邮件都慢</p>
-<p>一生只够爱一个人</p>
-<p>从前的锁也好看</p>
-<p>钥匙精美有样子</p>
-<p>你锁了</p>
-<p>人家就懂了</p>
-<p>从前的日色变得慢</p>
-<p>车 马 邮件都慢</p>
-<p>一生只够爱一个人</p>
-<p>从前的锁也好看</p>
-<p>钥匙精美有样子</p>
-<p>你锁了</p>
-<p>人家就懂了</p>
+                        <h3 id="23-&#x547D;&#x540D;">2.3 &#x547D;&#x540D;</h3>
+<h5 id="&#x5F3A;&#x5236;-&#x53D8;&#x91CF;-&#x4F7F;&#x7528;-camel&#x547D;&#x540D;&#x6CD5;&#x3002;">[&#x5F3A;&#x5236;] <code>&#x53D8;&#x91CF;</code> &#x4F7F;&#x7528; <code>Camel&#x547D;&#x540D;&#x6CD5;</code>&#x3002;</h5>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> loadingModules = {};
+</code></pre>
+<h5 id="&#x5F3A;&#x5236;-&#x5E38;&#x91CF;-&#x4F7F;&#x7528;-&#x5168;&#x90E8;&#x5B57;&#x6BCD;&#x5927;&#x5199;&#xFF0C;&#x5355;&#x8BCD;&#x95F4;&#x4E0B;&#x5212;&#x7EBF;&#x5206;&#x9694;-&#x7684;&#x547D;&#x540D;&#x65B9;&#x5F0F;&#x3002;">[&#x5F3A;&#x5236;] <code>&#x5E38;&#x91CF;</code> &#x4F7F;&#x7528; <code>&#x5168;&#x90E8;&#x5B57;&#x6BCD;&#x5927;&#x5199;&#xFF0C;&#x5355;&#x8BCD;&#x95F4;&#x4E0B;&#x5212;&#x7EBF;&#x5206;&#x9694;</code> &#x7684;&#x547D;&#x540D;&#x65B9;&#x5F0F;&#x3002;</h5>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> HTML_ENTITY = {};
+</code></pre>
+<h5 id="&#x5F3A;&#x5236;-&#x51FD;&#x6570;-&#x4F7F;&#x7528;-camel&#x547D;&#x540D;&#x6CD5;&#x3002;">[&#x5F3A;&#x5236;] <code>&#x51FD;&#x6570;</code> &#x4F7F;&#x7528; <code>Camel&#x547D;&#x540D;&#x6CD5;</code>&#x3002;</h5>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">stringFormat</span>(<span class="hljs-params">source</span>) </span>{
+}
+</code></pre>
+<h5 id="&#x5F3A;&#x5236;-&#x51FD;&#x6570;&#x7684;-&#x53C2;&#x6570;-&#x4F7F;&#x7528;-camel&#x547D;&#x540D;&#x6CD5;&#x3002;">[&#x5F3A;&#x5236;] &#x51FD;&#x6570;&#x7684; <code>&#x53C2;&#x6570;</code> &#x4F7F;&#x7528; <code>Camel&#x547D;&#x540D;&#x6CD5;</code>&#x3002;</h5>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">hear</span>(<span class="hljs-params">theBells</span>) </span>{
+}
+</code></pre>
+<h5 id="&#x5F3A;&#x5236;-&#x7C7B;-&#x4F7F;&#x7528;-pascal&#x547D;&#x540D;&#x6CD5;&#x3002;">[&#x5F3A;&#x5236;] <code>&#x7C7B;</code> &#x4F7F;&#x7528; <code>Pascal&#x547D;&#x540D;&#x6CD5;</code>&#x3002;</h5>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">TextNode</span>(<span class="hljs-params">options</span>) </span>{
+}
+</code></pre>
+<h5 id="&#x5F3A;&#x5236;-&#x7C7B;&#x7684;-&#x65B9;&#x6CD5;--&#x5C5E;&#x6027;-&#x4F7F;&#x7528;-camel&#x547D;&#x540D;&#x6CD5;&#x3002;">[&#x5F3A;&#x5236;] &#x7C7B;&#x7684; <code>&#x65B9;&#x6CD5; / &#x5C5E;&#x6027;</code> &#x4F7F;&#x7528; <code>Camel&#x547D;&#x540D;&#x6CD5;</code>&#x3002;</h5>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">TextNode</span>(<span class="hljs-params">value, engine</span>) </span>{
+    <span class="hljs-keyword">this</span>.value = value;
+    <span class="hljs-keyword">this</span>.engine = engine;
+}
+
+TextNode.prototype.clone = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+};
+</code></pre>
+<h5 id="&#x5F3A;&#x5236;-&#x679A;&#x4E3E;&#x53D8;&#x91CF;-&#x4F7F;&#x7528;-pascal&#x547D;&#x540D;&#x6CD5;&#xFF0C;&#x679A;&#x4E3E;&#x7684;&#x5C5E;&#x6027;-&#x4F7F;&#x7528;-&#x5168;&#x90E8;&#x5B57;&#x6BCD;&#x5927;&#x5199;&#xFF0C;&#x5355;&#x8BCD;&#x95F4;&#x4E0B;&#x5212;&#x7EBF;&#x5206;&#x9694;-&#x7684;&#x547D;&#x540D;&#x65B9;&#x5F0F;&#x3002;">[&#x5F3A;&#x5236;] <code>&#x679A;&#x4E3E;&#x53D8;&#x91CF;</code> &#x4F7F;&#x7528; <code>Pascal&#x547D;&#x540D;&#x6CD5;</code>&#xFF0C;<code>&#x679A;&#x4E3E;&#x7684;&#x5C5E;&#x6027;</code> &#x4F7F;&#x7528; <code>&#x5168;&#x90E8;&#x5B57;&#x6BCD;&#x5927;&#x5199;&#xFF0C;&#x5355;&#x8BCD;&#x95F4;&#x4E0B;&#x5212;&#x7EBF;&#x5206;&#x9694;</code> &#x7684;&#x547D;&#x540D;&#x65B9;&#x5F0F;&#x3002;</h5>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> TargetState = {
+    READING: <span class="hljs-number">1</span>,
+    READED: <span class="hljs-number">2</span>,
+    APPLIED: <span class="hljs-number">3</span>,
+    READY: <span class="hljs-number">4</span>
+};
+</code></pre>
+<h5 id="&#x5F3A;&#x5236;-&#x547D;&#x540D;&#x7A7A;&#x95F4;-&#x4F7F;&#x7528;-camel&#x547D;&#x540D;&#x6CD5;&#x3002;">[&#x5F3A;&#x5236;] <code>&#x547D;&#x540D;&#x7A7A;&#x95F4;</code> &#x4F7F;&#x7528; <code>Camel&#x547D;&#x540D;&#x6CD5;</code>&#x3002;</h5>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript">equipments.heavyWeapons = {};
+</code></pre>
+<h5 id="&#x5F3A;&#x5236;-&#x7531;&#x591A;&#x4E2A;&#x5355;&#x8BCD;&#x7EC4;&#x6210;&#x7684;&#x7F29;&#x5199;&#x8BCD;&#xFF0C;&#x5728;&#x547D;&#x540D;&#x4E2D;&#xFF0C;&#x6839;&#x636E;&#x5F53;&#x524D;&#x547D;&#x540D;&#x6CD5;&#x548C;&#x51FA;&#x73B0;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x6240;&#x6709;&#x5B57;&#x6BCD;&#x7684;&#x5927;&#x5C0F;&#x5199;&#x4E0E;&#x9996;&#x5B57;&#x6BCD;&#x7684;&#x5927;&#x5C0F;&#x5199;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#x3002;">[&#x5F3A;&#x5236;] &#x7531;&#x591A;&#x4E2A;&#x5355;&#x8BCD;&#x7EC4;&#x6210;&#x7684;&#x7F29;&#x5199;&#x8BCD;&#xFF0C;&#x5728;&#x547D;&#x540D;&#x4E2D;&#xFF0C;&#x6839;&#x636E;&#x5F53;&#x524D;&#x547D;&#x540D;&#x6CD5;&#x548C;&#x51FA;&#x73B0;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x6240;&#x6709;&#x5B57;&#x6BCD;&#x7684;&#x5927;&#x5C0F;&#x5199;&#x4E0E;&#x9996;&#x5B57;&#x6BCD;&#x7684;&#x5927;&#x5C0F;&#x5199;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#x3002;</h5>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">XMLParser</span>(<span class="hljs-params"></span>) </span>{
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">insertHTML</span>(<span class="hljs-params">element, html</span>) </span>{
+}
+
+<span class="hljs-keyword">var</span> httpRequest = <span class="hljs-keyword">new</span> HTTPRequest();
+</code></pre>
+<h5 id="&#x5F3A;&#x5236;-&#x7C7B;&#x540D;-&#x4F7F;&#x7528;-&#x540D;&#x8BCD;&#x3002;">[&#x5F3A;&#x5236;] <code>&#x7C7B;&#x540D;</code> &#x4F7F;&#x7528; <code>&#x540D;&#x8BCD;</code>&#x3002;</h5>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Engine</span>(<span class="hljs-params">options</span>) </span>{
+}
+</code></pre>
+<h5 id="&#x5EFA;&#x8BAE;-&#x51FD;&#x6570;&#x540D;-&#x4F7F;&#x7528;-&#x52A8;&#x5BBE;&#x77ED;&#x8BED;&#x3002;">[&#x5EFA;&#x8BAE;] <code>&#x51FD;&#x6570;&#x540D;</code> &#x4F7F;&#x7528; <code>&#x52A8;&#x5BBE;&#x77ED;&#x8BED;</code>&#x3002;</h5>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getStyle</span>(<span class="hljs-params">element</span>) </span>{
+}
+</code></pre>
+<h5 id="&#x5EFA;&#x8BAE;-boolean-&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#x4F7F;&#x7528;-is-&#x6216;-has-&#x5F00;&#x5934;&#x3002;">[&#x5EFA;&#x8BAE;] <code>boolean</code> &#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#x4F7F;&#x7528; <code>is</code> &#x6216; <code>has</code> &#x5F00;&#x5934;&#x3002;</h5>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> isReady = <span class="hljs-literal">false</span>;
+<span class="hljs-keyword">var</span> hasMoreCommands = <span class="hljs-literal">false</span>;
+</code></pre>
+<h5 id="&#x5EFA;&#x8BAE;-promise&#x5BF9;&#x8C61;-&#x7528;-&#x52A8;&#x5BBE;&#x77ED;&#x8BED;&#x7684;&#x8FDB;&#x884C;&#x65F6;-&#x8868;&#x8FBE;&#x3002;">[&#x5EFA;&#x8BAE;] <code>Promise&#x5BF9;&#x8C61;</code> &#x7528; <code>&#x52A8;&#x5BBE;&#x77ED;&#x8BED;&#x7684;&#x8FDB;&#x884C;&#x65F6;</code> &#x8868;&#x8FBE;&#x3002;</h5>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> loadingData = ajax.get(<span class="hljs-string">&apos;url&apos;</span>);
+loadingData.then(callback);
+</code></pre>
+
                     
                     </section>
                 
@@ -1064,14 +1124,16 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
         </div>
 
         
+        <a href="yu_ju.html" class="navigation navigation-prev " aria-label="Previous page: 语句"><i class="fa fa-angle-left"></i></a>
         
-        <a href="chapter1.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 前言" style="margin-right: 17px;"><i class="fa fa-angle-right"></i></a>
+        
+        <a href="zhu_shi.html" class="navigation navigation-next " aria-label="Next page: 注释" style="margin-right: 17px;"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
-    <script src="gitbook/app.js"></script>
+<script src="gitbook/app.js"></script>
 
     
     <script src="gitbook/plugins/gitbook-plugin-comment/plugin.js"></script>

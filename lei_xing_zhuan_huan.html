@@ -5,9 +5,9 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>一首小诗 | JavaScript 编码规范</title>
+        <title>类型转换 | JavaScript 编码规范</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="This file file serves as your book&#39;s preface, a great place to describe your book&#39;s content and ideas.">
+        <meta name="description" content="">
         <meta name="generator" content="GitBook 2.5.2">
         <meta name="author" content="itmyhome">
         
@@ -41,8 +41,10 @@
         
     
     
-    <link rel="next" href="chapter1.html" />
+    <link rel="next" href="zi_fu_chuan.html" />
     
+    
+    <link rel="prev" href="lei_xing_jian_ce.html" />
     
 
         
@@ -59,14 +61,14 @@ A.info:hover    {color:green;background:transparent;text-decoration:underline}
 </style>
 <!-- <div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
 This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  (Unregistered) on  11/16/15 16:06:39.<br>
-<b>Address:</b> <a class="info" href="https://itmyhome.gitbooks.io/javascript/content/index.html">https://itmyhome.gitbooks.io/javascript/content/index.html</a><br>
-<b>Title:</b> 一首小诗 | JavaScript 编码规范 &nbsp;&bull;&nbsp; <b>Size:</b> 29629 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Mon, 16 Nov 2015 05:18:18 GMT<br></div>
+<b>Address:</b> <a class="info" href="https://itmyhome.gitbooks.io/javascript/content/lei_xing_zhuan_huan.html">https://itmyhome.gitbooks.io/javascript/content/lei_xing_zhuan_huan.html</a><br>
+<b>Title:</b> 类型转换 | JavaScript 编码规范 &nbsp;&bull;&nbsp; <b>Size:</b> 33442 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Mon, 16 Nov 2015 05:18:18 GMT<br></div>
 <!-- /Copyright � 2005. Spidersoft Ltd -->
 
 
         
         
-    <div class="book" data-level="0" data-chapter-title="一首小诗" data-filepath="README.md" data-basepath="." data-revision="Mon Nov 16 2015 05:18:59 GMT+0000 (UTC)">
+    <div class="book" data-level="3.4.2" data-chapter-title="类型转换" data-filepath="lei_xing_zhuan_huan.md" data-basepath="." data-revision="Mon Nov 16 2015 05:18:59 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -88,7 +90,7 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
 
             
     
-        <li class="chapter active" data-level="0" data-path="index.html">
+        <li class="chapter " data-level="0" data-path="index.html">
             
                 
                     <a href="index.html">
@@ -556,7 +558,7 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
             
         </li>
     
-        <li class="chapter " data-level="3.4.2" data-path="lei_xing_zhuan_huan.html">
+        <li class="chapter active" data-level="3.4.2" data-path="lei_xing_zhuan_huan.html">
             
                 
                     <a href="lei_xing_zhuan_huan.html">
@@ -1034,27 +1036,54 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="my-awesome-book">从前慢</h1>
-<p>记得早先少年时</p>
-<p>大家诚诚恳恳</p>
-<p>说一句 是一句</p>
-<p>清早上火车站</p>
-<p>长街黑暗无行人</p>
-<p>卖豆浆的小店冒着热气</p>
-<p>从前的日色变得慢</p>
-<p>车 马 邮件都慢</p>
-<p>一生只够爱一个人</p>
-<p>从前的锁也好看</p>
-<p>钥匙精美有样子</p>
-<p>你锁了</p>
-<p>人家就懂了</p>
-<p>从前的日色变得慢</p>
-<p>车 马 邮件都慢</p>
-<p>一生只够爱一个人</p>
-<p>从前的锁也好看</p>
-<p>钥匙精美有样子</p>
-<p>你锁了</p>
-<p>人家就懂了</p>
+                        <h4 id="342-&#x7C7B;&#x578B;&#x8F6C;&#x6362;">3.4.2 &#x7C7B;&#x578B;&#x8F6C;&#x6362;</h4>
+<h5 id="&#x5EFA;&#x8BAE;-&#x8F6C;&#x6362;&#x6210;-string-&#x65F6;&#xFF0C;&#x4F7F;&#x7528;--&#x3002;">[&#x5EFA;&#x8BAE;] &#x8F6C;&#x6362;&#x6210; <code>string</code> &#x65F6;&#xFF0C;&#x4F7F;&#x7528; <code>+ &apos;&apos;</code>&#x3002;</h5>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// good</span>
+num + <span class="hljs-string">&apos;&apos;</span>;
+
+<span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">new</span> <span class="hljs-built_in">String</span>(num);
+num.toString();
+<span class="hljs-built_in">String</span>(num);
+</code></pre>
+<h5 id="&#x5EFA;&#x8BAE;-&#x8F6C;&#x6362;&#x6210;-number-&#x65F6;&#xFF0C;&#x901A;&#x5E38;&#x4F7F;&#x7528;-&#x3002;">[&#x5EFA;&#x8BAE;] &#x8F6C;&#x6362;&#x6210; <code>number</code> &#x65F6;&#xFF0C;&#x901A;&#x5E38;&#x4F7F;&#x7528; <code>+</code>&#x3002;</h5>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// good</span>
++str;
+
+<span class="hljs-comment">// bad</span>
+<span class="hljs-built_in">Number</span>(str);
+</code></pre>
+<h5 id="&#x5EFA;&#x8BAE;-string-&#x8F6C;&#x6362;&#x6210;-number&#xFF0C;&#x8981;&#x8F6C;&#x6362;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x7ED3;&#x5C3E;&#x5305;&#x542B;&#x975E;&#x6570;&#x5B57;&#x5E76;&#x671F;&#x671B;&#x5FFD;&#x7565;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;-parseint&#x3002;">[&#x5EFA;&#x8BAE;] <code>string</code> &#x8F6C;&#x6362;&#x6210; <code>number</code>&#xFF0C;&#x8981;&#x8F6C;&#x6362;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x7ED3;&#x5C3E;&#x5305;&#x542B;&#x975E;&#x6570;&#x5B57;&#x5E76;&#x671F;&#x671B;&#x5FFD;&#x7565;&#x65F6;&#xFF0C;&#x4F7F;&#x7528; <code>parseInt</code>&#x3002;</h5>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> width = <span class="hljs-string">&apos;200px&apos;</span>;
+<span class="hljs-built_in">parseInt</span>(width, <span class="hljs-number">10</span>);
+</code></pre>
+<h5 id="&#x5F3A;&#x5236;-&#x4F7F;&#x7528;-parseint-&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x6307;&#x5B9A;&#x8FDB;&#x5236;&#x3002;">[&#x5F3A;&#x5236;] &#x4F7F;&#x7528; <code>parseInt</code> &#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x6307;&#x5B9A;&#x8FDB;&#x5236;&#x3002;</h5>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// good</span>
+<span class="hljs-built_in">parseInt</span>(str, <span class="hljs-number">10</span>);
+
+<span class="hljs-comment">// bad</span>
+<span class="hljs-built_in">parseInt</span>(str);
+</code></pre>
+<h5 id="&#x5EFA;&#x8BAE;-&#x8F6C;&#x6362;&#x6210;-boolean-&#x65F6;&#xFF0C;&#x4F7F;&#x7528;-&#x3002;">[&#x5EFA;&#x8BAE;] &#x8F6C;&#x6362;&#x6210; <code>boolean</code> &#x65F6;&#xFF0C;&#x4F7F;&#x7528; <code>!!</code>&#x3002;</h5>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> num = <span class="hljs-number">3.14</span>;
+!!num;
+</code></pre>
+<h5 id="&#x5EFA;&#x8BAE;-number-&#x53BB;&#x9664;&#x5C0F;&#x6570;&#x70B9;&#xFF0C;&#x4F7F;&#x7528;-mathfloor--mathround--mathceil&#xFF0C;&#x4E0D;&#x4F7F;&#x7528;-parseint&#x3002;">[&#x5EFA;&#x8BAE;] <code>number</code> &#x53BB;&#x9664;&#x5C0F;&#x6570;&#x70B9;&#xFF0C;&#x4F7F;&#x7528; <code>Math.floor / Math.round / Math.ceil</code>&#xFF0C;&#x4E0D;&#x4F7F;&#x7528; <code>parseInt</code>&#x3002;</h5>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// good</span>
+<span class="hljs-keyword">var</span> num = <span class="hljs-number">3.14</span>;
+<span class="hljs-built_in">Math</span>.ceil(num);
+
+<span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">var</span> num = <span class="hljs-number">3.14</span>;
+<span class="hljs-built_in">parseInt</span>(num, <span class="hljs-number">10</span>);
+</code></pre>
+
                     
                     </section>
                 
@@ -1064,14 +1093,16 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
         </div>
 
         
+        <a href="lei_xing_jian_ce.html" class="navigation navigation-prev " aria-label="Previous page: 类型检测"><i class="fa fa-angle-left"></i></a>
         
-        <a href="chapter1.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 前言" style="margin-right: 17px;"><i class="fa fa-angle-right"></i></a>
+        
+        <a href="zi_fu_chuan.html" class="navigation navigation-next " aria-label="Next page: 字符串" style="margin-right: 17px;"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
-    <script src="gitbook/app.js"></script>
+<script src="gitbook/app.js"></script>
 
     
     <script src="gitbook/plugins/gitbook-plugin-comment/plugin.js"></script>

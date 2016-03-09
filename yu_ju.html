@@ -5,9 +5,9 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>一首小诗 | JavaScript 编码规范</title>
+        <title>语句 | JavaScript 编码规范</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="This file file serves as your book&#39;s preface, a great place to describe your book&#39;s content and ideas.">
+        <meta name="description" content="">
         <meta name="generator" content="GitBook 2.5.2">
         <meta name="author" content="itmyhome">
         
@@ -41,8 +41,10 @@
         
     
     
-    <link rel="next" href="chapter1.html" />
+    <link rel="next" href="ming_ming.html" />
     
+    
+    <link rel="prev" href="huan_xing.html" />
     
 
         
@@ -59,14 +61,14 @@ A.info:hover    {color:green;background:transparent;text-decoration:underline}
 </style>
 <!-- <div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
 This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  (Unregistered) on  11/16/15 16:06:39.<br>
-<b>Address:</b> <a class="info" href="https://itmyhome.gitbooks.io/javascript/content/index.html">https://itmyhome.gitbooks.io/javascript/content/index.html</a><br>
-<b>Title:</b> 一首小诗 | JavaScript 编码规范 &nbsp;&bull;&nbsp; <b>Size:</b> 29629 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Mon, 16 Nov 2015 05:18:18 GMT<br></div>
+<b>Address:</b> <a class="info" href="https://itmyhome.gitbooks.io/javascript/content/yu_ju.html">https://itmyhome.gitbooks.io/javascript/content/yu_ju.html</a><br>
+<b>Title:</b> 语句 | JavaScript 编码规范 &nbsp;&bull;&nbsp; <b>Size:</b> 33872 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Mon, 16 Nov 2015 05:18:18 GMT<br></div>
 <!-- /Copyright � 2005. Spidersoft Ltd -->
 
 
         
         
-    <div class="book" data-level="0" data-chapter-title="一首小诗" data-filepath="README.md" data-basepath="." data-revision="Mon Nov 16 2015 05:18:59 GMT+0000 (UTC)">
+    <div class="book" data-level="2.2.4" data-chapter-title="语句" data-filepath="yu_ju.md" data-basepath="." data-revision="Mon Nov 16 2015 05:18:59 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -88,7 +90,7 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
 
             
     
-        <li class="chapter active" data-level="0" data-path="index.html">
+        <li class="chapter " data-level="0" data-path="index.html">
             
                 
                     <a href="index.html">
@@ -208,7 +210,7 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
             
         </li>
     
-        <li class="chapter " data-level="2.2.4" data-path="yu_ju.html">
+        <li class="chapter active" data-level="2.2.4" data-path="yu_ju.html">
             
                 
                     <a href="yu_ju.html">
@@ -1034,27 +1036,59 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="my-awesome-book">从前慢</h1>
-<p>记得早先少年时</p>
-<p>大家诚诚恳恳</p>
-<p>说一句 是一句</p>
-<p>清早上火车站</p>
-<p>长街黑暗无行人</p>
-<p>卖豆浆的小店冒着热气</p>
-<p>从前的日色变得慢</p>
-<p>车 马 邮件都慢</p>
-<p>一生只够爱一个人</p>
-<p>从前的锁也好看</p>
-<p>钥匙精美有样子</p>
-<p>你锁了</p>
-<p>人家就懂了</p>
-<p>从前的日色变得慢</p>
-<p>车 马 邮件都慢</p>
-<p>一生只够爱一个人</p>
-<p>从前的锁也好看</p>
-<p>钥匙精美有样子</p>
-<p>你锁了</p>
-<p>人家就懂了</p>
+                        <h4 id="224-&#x8BED;&#x53E5;">2.2.4 &#x8BED;&#x53E5;</h4>
+<h5 id="&#x5F3A;&#x5236;-&#x4E0D;&#x5F97;&#x7701;&#x7565;&#x8BED;&#x53E5;&#x7ED3;&#x675F;&#x7684;&#x5206;&#x53F7;&#x3002;">[&#x5F3A;&#x5236;] &#x4E0D;&#x5F97;&#x7701;&#x7565;&#x8BED;&#x53E5;&#x7ED3;&#x675F;&#x7684;&#x5206;&#x53F7;&#x3002;</h5>
+<h5 id="&#x5F3A;&#x5236;-&#x5728;-if--else--for--do--while-&#x8BED;&#x53E5;&#x4E2D;&#xFF0C;&#x5373;&#x4F7F;&#x53EA;&#x6709;&#x4E00;&#x884C;&#xFF0C;&#x4E5F;&#x4E0D;&#x5F97;&#x7701;&#x7565;&#x5757;-&#x3002;">[&#x5F3A;&#x5236;] &#x5728; <code>if / else / for / do / while</code> &#x8BED;&#x53E5;&#x4E2D;&#xFF0C;&#x5373;&#x4F7F;&#x53EA;&#x6709;&#x4E00;&#x884C;&#xFF0C;&#x4E5F;&#x4E0D;&#x5F97;&#x7701;&#x7565;&#x5757; <code>{...}</code>&#x3002;</h5>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// good</span>
+<span class="hljs-keyword">if</span> (condition) {
+    callFunc();
+}
+
+<span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">if</span> (condition) callFunc();
+<span class="hljs-keyword">if</span> (condition)
+    callFunc();
+</code></pre>
+<h5 id="&#x5F3A;&#x5236;-&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x7ED3;&#x675F;&#x4E0D;&#x5141;&#x8BB8;&#x6DFB;&#x52A0;&#x5206;&#x53F7;&#x3002;">[&#x5F3A;&#x5236;] &#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x7ED3;&#x675F;&#x4E0D;&#x5141;&#x8BB8;&#x6DFB;&#x52A0;&#x5206;&#x53F7;&#x3002;</h5>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// good</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">funcName</span>(<span class="hljs-params"></span>) </span>{
+}
+
+<span class="hljs-comment">// bad</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">funcName</span>(<span class="hljs-params"></span>) </span>{
+};
+
+<span class="hljs-comment">// &#x5982;&#x679C;&#x662F;&#x51FD;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x5206;&#x53F7;&#x662F;&#x4E0D;&#x5141;&#x8BB8;&#x7701;&#x7565;&#x7684;&#x3002;</span>
+<span class="hljs-keyword">var</span> funcName = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+};
+</code></pre>
+<h5 id="&#x5F3A;&#x5236;-iife-&#x5FC5;&#x987B;&#x5728;&#x51FD;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#x5916;&#x6DFB;&#x52A0;-&#xFF0C;&#x975E;-iife-&#x4E0D;&#x5F97;&#x5728;&#x51FD;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#x5916;&#x6DFB;&#x52A0;-&#x3002;">[&#x5F3A;&#x5236;] <code>IIFE</code> &#x5FC5;&#x987B;&#x5728;&#x51FD;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#x5916;&#x6DFB;&#x52A0; <code>(</code>&#xFF0C;&#x975E; <code>IIFE</code> &#x4E0D;&#x5F97;&#x5728;&#x51FD;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#x5916;&#x6DFB;&#x52A0; <code>(</code>&#x3002;</h5>
+<p>&#x89E3;&#x91CA;&#xFF1A;</p>
+<p>IIFE = Immediately-Invoked Function Expression.</p>
+<p>&#x989D;&#x5916;&#x7684; ( &#x80FD;&#x591F;&#x8BA9;&#x4EE3;&#x7801;&#x5728;&#x9605;&#x8BFB;&#x7684;&#x4E00;&#x5F00;&#x59CB;&#x5C31;&#x80FD;&#x5224;&#x65AD;&#x51FD;&#x6570;&#x662F;&#x5426;&#x7ACB;&#x5373;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x8FDB;&#x800C;&#x660E;&#x767D;&#x63A5;&#x4E0B;&#x6765;&#x4EE3;&#x7801;&#x7684;&#x7528;&#x9014;&#x3002;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x76F4;&#x62D6;&#x5230;&#x5E95;&#x90E8;&#x624D;&#x604D;&#x7136;&#x5927;&#x609F;&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// good</span>
+<span class="hljs-keyword">var</span> task = (<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+   <span class="hljs-comment">// Code</span>
+   <span class="hljs-keyword">return</span> result;
+})();
+
+<span class="hljs-keyword">var</span> func = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+};
+
+
+<span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">var</span> task = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// Code</span>
+    <span class="hljs-keyword">return</span> result;
+}();
+
+<span class="hljs-keyword">var</span> func = (<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+});
+</code></pre>
+
                     
                     </section>
                 
@@ -1064,14 +1098,16 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
         </div>
 
         
+        <a href="huan_xing.html" class="navigation navigation-prev " aria-label="Previous page: 换行"><i class="fa fa-angle-left"></i></a>
         
-        <a href="chapter1.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 前言" style="margin-right: 17px;"><i class="fa fa-angle-right"></i></a>
+        
+        <a href="ming_ming.html" class="navigation navigation-next " aria-label="Next page: 命名" style="margin-right: 17px;"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
-    <script src="gitbook/app.js"></script>
+<script src="gitbook/app.js"></script>
 
     
     <script src="gitbook/plugins/gitbook-plugin-comment/plugin.js"></script>

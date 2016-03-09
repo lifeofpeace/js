@@ -5,9 +5,9 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>一首小诗 | JavaScript 编码规范</title>
+        <title>动态执行代码 | JavaScript 编码规范</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="This file file serves as your book&#39;s preface, a great place to describe your book&#39;s content and ideas.">
+        <meta name="description" content="">
         <meta name="generator" content="GitBook 2.5.2">
         <meta name="author" content="itmyhome">
         
@@ -41,8 +41,10 @@
         
     
     
-    <link rel="next" href="chapter1.html" />
+    <link rel="next" href="with.html" />
     
+    
+    <link rel="prev" href="eval.html" />
     
 
         
@@ -59,14 +61,14 @@ A.info:hover    {color:green;background:transparent;text-decoration:underline}
 </style>
 <!-- <div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
 This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  (Unregistered) on  11/16/15 16:06:39.<br>
-<b>Address:</b> <a class="info" href="https://itmyhome.gitbooks.io/javascript/content/index.html">https://itmyhome.gitbooks.io/javascript/content/index.html</a><br>
-<b>Title:</b> 一首小诗 | JavaScript 编码规范 &nbsp;&bull;&nbsp; <b>Size:</b> 29629 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Mon, 16 Nov 2015 05:18:18 GMT<br></div>
+<b>Address:</b> <a class="info" href="https://itmyhome.gitbooks.io/javascript/content/dong_tai_zhi_xing_dai_ma.html">https://itmyhome.gitbooks.io/javascript/content/dong_tai_zhi_xing_dai_ma.html</a><br>
+<b>Title:</b> 动态执行代码 | JavaScript 编码规范 &nbsp;&bull;&nbsp; <b>Size:</b> 30914 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Mon, 16 Nov 2015 05:18:18 GMT<br></div>
 <!-- /Copyright � 2005. Spidersoft Ltd -->
 
 
         
         
-    <div class="book" data-level="0" data-chapter-title="一首小诗" data-filepath="README.md" data-basepath="." data-revision="Mon Nov 16 2015 05:18:59 GMT+0000 (UTC)">
+    <div class="book" data-level="3.10.2" data-chapter-title="动态执行代码" data-filepath="dong_tai_zhi_xing_dai_ma.md" data-basepath="." data-revision="Mon Nov 16 2015 05:18:59 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -88,7 +90,7 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
 
             
     
-        <li class="chapter active" data-level="0" data-path="index.html">
+        <li class="chapter " data-level="0" data-path="index.html">
             
                 
                     <a href="index.html">
@@ -748,7 +750,7 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
             
         </li>
     
-        <li class="chapter " data-level="3.10.2" data-path="dong_tai_zhi_xing_dai_ma.html">
+        <li class="chapter active" data-level="3.10.2" data-path="dong_tai_zhi_xing_dai_ma.html">
             
                 
                     <a href="dong_tai_zhi_xing_dai_ma.html">
@@ -1034,27 +1036,15 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="my-awesome-book">从前慢</h1>
-<p>记得早先少年时</p>
-<p>大家诚诚恳恳</p>
-<p>说一句 是一句</p>
-<p>清早上火车站</p>
-<p>长街黑暗无行人</p>
-<p>卖豆浆的小店冒着热气</p>
-<p>从前的日色变得慢</p>
-<p>车 马 邮件都慢</p>
-<p>一生只够爱一个人</p>
-<p>从前的锁也好看</p>
-<p>钥匙精美有样子</p>
-<p>你锁了</p>
-<p>人家就懂了</p>
-<p>从前的日色变得慢</p>
-<p>车 马 邮件都慢</p>
-<p>一生只够爱一个人</p>
-<p>从前的锁也好看</p>
-<p>钥匙精美有样子</p>
-<p>你锁了</p>
-<p>人家就懂了</p>
+                        <h4 id="3102-&#x52A8;&#x6001;&#x6267;&#x884C;&#x4EE3;&#x7801;">3.10.2 &#x52A8;&#x6001;&#x6267;&#x884C;&#x4EE3;&#x7801;</h4>
+<h5 id="&#x5EFA;&#x8BAE;-&#x4F7F;&#x7528;-new-function-&#x6267;&#x884C;&#x52A8;&#x6001;&#x4EE3;&#x7801;&#x3002;">[&#x5EFA;&#x8BAE;] &#x4F7F;&#x7528; <code>new Function</code> &#x6267;&#x884C;&#x52A8;&#x6001;&#x4EE3;&#x7801;&#x3002;</h5>
+<p>&#x89E3;&#x91CA;&#xFF1A;</p>
+<p>&#x901A;&#x8FC7; new Function &#x751F;&#x6210;&#x7684;&#x51FD;&#x6570;&#x4F5C;&#x7528;&#x57DF;&#x662F;&#x5168;&#x5C40;&#x4F7F;&#x7528;&#x57DF;&#xFF0C;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x5F53;&#x5F53;&#x524D;&#x7684;&#x672C;&#x5730;&#x4F5C;&#x7528;&#x57DF;&#x3002;&#x5982;&#x679C;&#x6709;&#x52A8;&#x6001;&#x4EE3;&#x7801;&#x6267;&#x884C;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528; new Function&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> handler = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Function</span>(<span class="hljs-string">&apos;x&apos;</span>, <span class="hljs-string">&apos;y&apos;</span>, <span class="hljs-string">&apos;return x + y;&apos;</span>);
+<span class="hljs-keyword">var</span> result = handler($(<span class="hljs-string">&apos;#x&apos;</span>).val(), $(<span class="hljs-string">&apos;#y&apos;</span>).val());
+</code></pre>
+
                     
                     </section>
                 
@@ -1064,14 +1054,16 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
         </div>
 
         
+        <a href="eval.html" class="navigation navigation-prev " aria-label="Previous page: eval"><i class="fa fa-angle-left"></i></a>
         
-        <a href="chapter1.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 前言" style="margin-right: 17px;"><i class="fa fa-angle-right"></i></a>
+        
+        <a href="with.html" class="navigation navigation-next " aria-label="Next page: with" style="margin-right: 17px;"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
-    <script src="gitbook/app.js"></script>
+<script src="gitbook/app.js"></script>
 
     
     <script src="gitbook/plugins/gitbook-plugin-comment/plugin.js"></script>

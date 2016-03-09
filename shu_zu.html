@@ -5,9 +5,9 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>一首小诗 | JavaScript 编码规范</title>
+        <title>数组 | JavaScript 编码规范</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="This file file serves as your book&#39;s preface, a great place to describe your book&#39;s content and ideas.">
+        <meta name="description" content="">
         <meta name="generator" content="GitBook 2.5.2">
         <meta name="author" content="itmyhome">
         
@@ -41,8 +41,10 @@
         
     
     
-    <link rel="next" href="chapter1.html" />
+    <link rel="next" href="han_shu.html" />
     
+    
+    <link rel="prev" href="dui_xiang.html" />
     
 
         
@@ -59,14 +61,14 @@ A.info:hover    {color:green;background:transparent;text-decoration:underline}
 </style>
 <!-- <div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
 This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  (Unregistered) on  11/16/15 16:06:39.<br>
-<b>Address:</b> <a class="info" href="https://itmyhome.gitbooks.io/javascript/content/index.html">https://itmyhome.gitbooks.io/javascript/content/index.html</a><br>
-<b>Title:</b> 一首小诗 | JavaScript 编码规范 &nbsp;&bull;&nbsp; <b>Size:</b> 29629 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Mon, 16 Nov 2015 05:18:18 GMT<br></div>
+<b>Address:</b> <a class="info" href="https://itmyhome.gitbooks.io/javascript/content/shu_zu.html">https://itmyhome.gitbooks.io/javascript/content/shu_zu.html</a><br>
+<b>Title:</b> 数组 | JavaScript 编码规范 &nbsp;&bull;&nbsp; <b>Size:</b> 33432 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Mon, 16 Nov 2015 05:18:18 GMT<br></div>
 <!-- /Copyright � 2005. Spidersoft Ltd -->
 
 
         
         
-    <div class="book" data-level="0" data-chapter-title="一首小诗" data-filepath="README.md" data-basepath="." data-revision="Mon Nov 16 2015 05:18:59 GMT+0000 (UTC)">
+    <div class="book" data-level="3.7" data-chapter-title="数组" data-filepath="shu_zu.md" data-basepath="." data-revision="Mon Nov 16 2015 05:18:59 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -88,7 +90,7 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
 
             
     
-        <li class="chapter active" data-level="0" data-path="index.html">
+        <li class="chapter " data-level="0" data-path="index.html">
             
                 
                     <a href="index.html">
@@ -606,7 +608,7 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
             
         </li>
     
-        <li class="chapter " data-level="3.7" data-path="shu_zu.html">
+        <li class="chapter active" data-level="3.7" data-path="shu_zu.html">
             
                 
                     <a href="shu_zu.html">
@@ -1034,27 +1036,41 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="my-awesome-book">从前慢</h1>
-<p>记得早先少年时</p>
-<p>大家诚诚恳恳</p>
-<p>说一句 是一句</p>
-<p>清早上火车站</p>
-<p>长街黑暗无行人</p>
-<p>卖豆浆的小店冒着热气</p>
-<p>从前的日色变得慢</p>
-<p>车 马 邮件都慢</p>
-<p>一生只够爱一个人</p>
-<p>从前的锁也好看</p>
-<p>钥匙精美有样子</p>
-<p>你锁了</p>
-<p>人家就懂了</p>
-<p>从前的日色变得慢</p>
-<p>车 马 邮件都慢</p>
-<p>一生只够爱一个人</p>
-<p>从前的锁也好看</p>
-<p>钥匙精美有样子</p>
-<p>你锁了</p>
-<p>人家就懂了</p>
+                        <h3 id="37-&#x6570;&#x7EC4;">3.7 &#x6570;&#x7EC4;</h3>
+<h5 id="&#x5F3A;&#x5236;-&#x4F7F;&#x7528;&#x6570;&#x7EC4;&#x5B57;&#x9762;&#x91CF;--&#x521B;&#x5EFA;&#x65B0;&#x6570;&#x7EC4;&#xFF0C;&#x9664;&#x975E;&#x60F3;&#x8981;&#x521B;&#x5EFA;&#x7684;&#x662F;&#x6307;&#x5B9A;&#x957F;&#x5EA6;&#x7684;&#x6570;&#x7EC4;&#x3002;">[&#x5F3A;&#x5236;] &#x4F7F;&#x7528;&#x6570;&#x7EC4;&#x5B57;&#x9762;&#x91CF; <code>[]</code> &#x521B;&#x5EFA;&#x65B0;&#x6570;&#x7EC4;&#xFF0C;&#x9664;&#x975E;&#x60F3;&#x8981;&#x521B;&#x5EFA;&#x7684;&#x662F;&#x6307;&#x5B9A;&#x957F;&#x5EA6;&#x7684;&#x6570;&#x7EC4;&#x3002;</h5>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// good</span>
+<span class="hljs-keyword">var</span> arr = [];
+
+<span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">var</span> arr = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>();
+</code></pre>
+<h5 id="&#x5F3A;&#x5236;-&#x904D;&#x5386;&#x6570;&#x7EC4;&#x4E0D;&#x4F7F;&#x7528;-for-in&#x3002;">[&#x5F3A;&#x5236;] &#x904D;&#x5386;&#x6570;&#x7EC4;&#x4E0D;&#x4F7F;&#x7528; <code>for in</code>&#x3002;</h5>
+<p>&#x89E3;&#x91CA;&#xFF1A;</p>
+<p>&#x6570;&#x7EC4;&#x5BF9;&#x8C61;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x6570;&#x5B57;&#x4EE5;&#x5916;&#x7684;&#x5C5E;&#x6027;, &#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B; for in &#x4E0D;&#x4F1A;&#x5F97;&#x5230;&#x6B63;&#x786E;&#x7ED3;&#x679C;.</p>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> arr = [<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>];
+arr.other = <span class="hljs-string">&apos;other things&apos;</span>; <span class="hljs-comment">// &#x8FD9;&#x91CC;&#x4EC5;&#x4F5C;&#x6F14;&#x793A;, &#x5B9E;&#x9645;&#x4E2D;&#x5E94;&#x4F7F;&#x7528;Object&#x7C7B;&#x578B;</span>
+
+<span class="hljs-comment">// &#x6B63;&#x786E;&#x7684;&#x904D;&#x5386;&#x65B9;&#x5F0F;</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>, len = arr.length; i &lt; len; i++) {
+    <span class="hljs-built_in">console</span>.log(i);
+}
+
+<span class="hljs-comment">// &#x9519;&#x8BEF;&#x7684;&#x904D;&#x5386;&#x65B9;&#x5F0F;</span>
+<span class="hljs-keyword">for</span> (i <span class="hljs-keyword">in</span> arr) {
+    <span class="hljs-built_in">console</span>.log(i);
+}
+</code></pre>
+<h5 id="&#x5EFA;&#x8BAE;-&#x4E0D;&#x56E0;&#x4E3A;&#x6027;&#x80FD;&#x7684;&#x539F;&#x56E0;&#x81EA;&#x5DF1;&#x5B9E;&#x73B0;&#x6570;&#x7EC4;&#x6392;&#x5E8F;&#x529F;&#x80FD;&#xFF0C;&#x5C3D;&#x91CF;&#x4F7F;&#x7528;&#x6570;&#x7EC4;&#x7684;-sort-&#x65B9;&#x6CD5;&#x3002;">[&#x5EFA;&#x8BAE;] &#x4E0D;&#x56E0;&#x4E3A;&#x6027;&#x80FD;&#x7684;&#x539F;&#x56E0;&#x81EA;&#x5DF1;&#x5B9E;&#x73B0;&#x6570;&#x7EC4;&#x6392;&#x5E8F;&#x529F;&#x80FD;&#xFF0C;&#x5C3D;&#x91CF;&#x4F7F;&#x7528;&#x6570;&#x7EC4;&#x7684; <code>sort</code> &#x65B9;&#x6CD5;&#x3002;</h5>
+<p>&#x89E3;&#x91CA;&#xFF1A;</p>
+<p>&#x81EA;&#x5DF1;&#x5B9E;&#x73B0;&#x7684;&#x5E38;&#x89C4;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#xFF0C;&#x5728;&#x6027;&#x80FD;&#x4E0A;&#x5E76;&#x4E0D;&#x4F18;&#x4E8E;&#x6570;&#x7EC4;&#x9ED8;&#x8BA4;&#x7684; sort &#x65B9;&#x6CD5;&#x3002;&#x4EE5;&#x4E0B;&#x4E24;&#x79CD;&#x573A;&#x666F;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x5B9E;&#x73B0;&#x6392;&#x5E8F;&#xFF1A;</p>
+<ol>
+<li>&#x9700;&#x8981;&#x7A33;&#x5B9A;&#x7684;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#xFF0C;&#x8FBE;&#x5230;&#x4E25;&#x683C;&#x4E00;&#x81F4;&#x7684;&#x6392;&#x5E8F;&#x7ED3;&#x679C;&#x3002;</li>
+<li>&#x6570;&#x636E;&#x7279;&#x70B9;&#x9C9C;&#x660E;&#xFF0C;&#x9002;&#x5408;&#x4F7F;&#x7528;&#x6876;&#x6392;&#x3002;</li>
+</ol>
+<h5 id="&#x5EFA;&#x8BAE;-&#x6E05;&#x7A7A;&#x6570;&#x7EC4;&#x4F7F;&#x7528;-length--0&#x3002;">[&#x5EFA;&#x8BAE;] &#x6E05;&#x7A7A;&#x6570;&#x7EC4;&#x4F7F;&#x7528; <code>.length = 0</code>&#x3002;</h5>
+
                     
                     </section>
                 
@@ -1064,14 +1080,16 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
         </div>
 
         
+        <a href="dui_xiang.html" class="navigation navigation-prev " aria-label="Previous page: 对象"><i class="fa fa-angle-left"></i></a>
         
-        <a href="chapter1.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 前言" style="margin-right: 17px;"><i class="fa fa-angle-right"></i></a>
+        
+        <a href="han_shu.html" class="navigation navigation-next " aria-label="Next page: 函数" style="margin-right: 17px;"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
-    <script src="gitbook/app.js"></script>
+<script src="gitbook/app.js"></script>
 
     
     <script src="gitbook/plugins/gitbook-plugin-comment/plugin.js"></script>

@@ -5,9 +5,9 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>一首小诗 | JavaScript 编码规范</title>
+        <title>变量 | JavaScript 编码规范</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="This file file serves as your book&#39;s preface, a great place to describe your book&#39;s content and ideas.">
+        <meta name="description" content="">
         <meta name="generator" content="GitBook 2.5.2">
         <meta name="author" content="itmyhome">
         
@@ -41,8 +41,10 @@
         
     
     
-    <link rel="next" href="chapter1.html" />
+    <link rel="next" href="tiao_jian.html" />
     
+    
+    <link rel="prev" href="yu_yan_te_xing.html" />
     
 
         
@@ -59,14 +61,14 @@ A.info:hover    {color:green;background:transparent;text-decoration:underline}
 </style>
 <!-- <div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
 This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  (Unregistered) on  11/16/15 16:06:39.<br>
-<b>Address:</b> <a class="info" href="https://itmyhome.gitbooks.io/javascript/content/index.html">https://itmyhome.gitbooks.io/javascript/content/index.html</a><br>
-<b>Title:</b> 一首小诗 | JavaScript 编码规范 &nbsp;&bull;&nbsp; <b>Size:</b> 29629 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Mon, 16 Nov 2015 05:18:18 GMT<br></div>
+<b>Address:</b> <a class="info" href="https://itmyhome.gitbooks.io/javascript/content/bian_liang.html">https://itmyhome.gitbooks.io/javascript/content/bian_liang.html</a><br>
+<b>Title:</b> 变量 | JavaScript 编码规范 &nbsp;&bull;&nbsp; <b>Size:</b> 34208 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Mon, 16 Nov 2015 05:18:17 GMT<br></div>
 <!-- /Copyright � 2005. Spidersoft Ltd -->
 
 
         
         
-    <div class="book" data-level="0" data-chapter-title="一首小诗" data-filepath="README.md" data-basepath="." data-revision="Mon Nov 16 2015 05:18:59 GMT+0000 (UTC)">
+    <div class="book" data-level="3.1" data-chapter-title="变量" data-filepath="bian_liang.md" data-basepath="." data-revision="Mon Nov 16 2015 05:18:59 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -88,7 +90,7 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
 
             
     
-        <li class="chapter active" data-level="0" data-path="index.html">
+        <li class="chapter " data-level="0" data-path="index.html">
             
                 
                     <a href="index.html">
@@ -480,7 +482,7 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.1" data-path="bian_liang.html">
+        <li class="chapter active" data-level="3.1" data-path="bian_liang.html">
             
                 
                     <a href="bian_liang.html">
@@ -1034,27 +1036,72 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="my-awesome-book">从前慢</h1>
-<p>记得早先少年时</p>
-<p>大家诚诚恳恳</p>
-<p>说一句 是一句</p>
-<p>清早上火车站</p>
-<p>长街黑暗无行人</p>
-<p>卖豆浆的小店冒着热气</p>
-<p>从前的日色变得慢</p>
-<p>车 马 邮件都慢</p>
-<p>一生只够爱一个人</p>
-<p>从前的锁也好看</p>
-<p>钥匙精美有样子</p>
-<p>你锁了</p>
-<p>人家就懂了</p>
-<p>从前的日色变得慢</p>
-<p>车 马 邮件都慢</p>
-<p>一生只够爱一个人</p>
-<p>从前的锁也好看</p>
-<p>钥匙精美有样子</p>
-<p>你锁了</p>
-<p>人家就懂了</p>
+                        <h3 id="31-&#x53D8;&#x91CF;">3.1 &#x53D8;&#x91CF;</h3>
+<h5 id="&#x5F3A;&#x5236;-&#x53D8;&#x91CF;&#x5728;&#x4F7F;&#x7528;&#x524D;&#x5FC5;&#x987B;&#x901A;&#x8FC7;-var-&#x5B9A;&#x4E49;&#x3002;">[&#x5F3A;&#x5236;] &#x53D8;&#x91CF;&#x5728;&#x4F7F;&#x7528;&#x524D;&#x5FC5;&#x987B;&#x901A;&#x8FC7; <code>var</code> &#x5B9A;&#x4E49;&#x3002;</h5>
+<p>&#x89E3;&#x91CA;&#xFF1A;</p>
+<p>&#x4E0D;&#x901A;&#x8FC7; var &#x5B9A;&#x4E49;&#x53D8;&#x91CF;&#x5C06;&#x5BFC;&#x81F4;&#x53D8;&#x91CF;&#x6C61;&#x67D3;&#x5168;&#x5C40;&#x73AF;&#x5883;&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// good</span>
+<span class="hljs-keyword">var</span> name = <span class="hljs-string">&apos;MyName&apos;</span>;
+
+<span class="hljs-comment">// bad</span>
+name = <span class="hljs-string">&apos;MyName&apos;</span>;
+</code></pre>
+<h5 id="&#x5F3A;&#x5236;-&#x6BCF;&#x4E2A;-var-&#x53EA;&#x80FD;&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x3002;">[&#x5F3A;&#x5236;] &#x6BCF;&#x4E2A; <code>var</code> &#x53EA;&#x80FD;&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x3002;</h5>
+<p>&#x89E3;&#x91CA;&#xFF1A;</p>
+<p>&#x4E00;&#x4E2A; var &#x58F0;&#x660E;&#x591A;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x5BB9;&#x6613;&#x5BFC;&#x81F4;&#x8F83;&#x957F;&#x7684;&#x884C;&#x957F;&#x5EA6;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x4FEE;&#x6539;&#x65F6;&#x5BB9;&#x6613;&#x9020;&#x6210;&#x9017;&#x53F7;&#x548C;&#x5206;&#x53F7;&#x7684;&#x6DF7;&#x6DC6;&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// good</span>
+<span class="hljs-keyword">var</span> hangModules = [];
+<span class="hljs-keyword">var</span> missModules = [];
+<span class="hljs-keyword">var</span> visited = {};
+
+<span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">var</span> hangModules = [],
+    missModules = [],
+    visited = {};
+</code></pre>
+<h5 id="&#x5F3A;&#x5236;-&#x53D8;&#x91CF;&#x5FC5;&#x987B;-&#x5373;&#x7528;&#x5373;&#x58F0;&#x660E;&#xFF0C;&#x4E0D;&#x5F97;&#x5728;&#x51FD;&#x6570;&#x6216;&#x5176;&#x5B83;&#x5F62;&#x5F0F;&#x7684;&#x4EE3;&#x7801;&#x5757;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x7EDF;&#x4E00;&#x58F0;&#x660E;&#x6240;&#x6709;&#x53D8;&#x91CF;&#x3002;">[&#x5F3A;&#x5236;] &#x53D8;&#x91CF;&#x5FC5;&#x987B; <code>&#x5373;&#x7528;&#x5373;&#x58F0;&#x660E;</code>&#xFF0C;&#x4E0D;&#x5F97;&#x5728;&#x51FD;&#x6570;&#x6216;&#x5176;&#x5B83;&#x5F62;&#x5F0F;&#x7684;&#x4EE3;&#x7801;&#x5757;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x7EDF;&#x4E00;&#x58F0;&#x660E;&#x6240;&#x6709;&#x53D8;&#x91CF;&#x3002;</h5>
+<p>&#x89E3;&#x91CA;&#xFF1A; </p>
+<p>&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x4E0E;&#x4F7F;&#x7528;&#x7684;&#x8DDD;&#x79BB;&#x8D8A;&#x8FDC;&#xFF0C;&#x51FA;&#x73B0;&#x7684;&#x8DE8;&#x5EA6;&#x8D8A;&#x5927;&#xFF0C;&#x4EE3;&#x7801;&#x7684;&#x9605;&#x8BFB;&#x4E0E;&#x7EF4;&#x62A4;&#x6210;&#x672C;&#x8D8A;&#x9AD8;&#x3002;&#x867D;&#x7136;JavaScript&#x7684;&#x53D8;&#x91CF;&#x662F;&#x51FD;&#x6570;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x8FD8;&#x662F;&#x5E94;&#x8BE5;&#x6839;&#x636E;&#x7F16;&#x7A0B;&#x4E2D;&#x7684;&#x610F;&#x56FE;&#xFF0C;&#x7F29;&#x5C0F;&#x53D8;&#x91CF;&#x51FA;&#x73B0;&#x7684;&#x8DDD;&#x79BB;&#x7A7A;&#x95F4;&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// good</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">kv2List</span>(<span class="hljs-params">source</span>) </span>{
+    <span class="hljs-keyword">var</span> list = [];
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> key <span class="hljs-keyword">in</span> source) {
+        <span class="hljs-keyword">if</span> (source.hasOwnProperty(key)) {
+            <span class="hljs-keyword">var</span> item = {
+                k: key,
+                v: source[key]
+            };
+            list.push(item);
+        }
+    }
+
+    <span class="hljs-keyword">return</span> list;
+}
+
+<span class="hljs-comment">// bad</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">kv2List</span>(<span class="hljs-params">source</span>) </span>{
+    <span class="hljs-keyword">var</span> list = [];
+    <span class="hljs-keyword">var</span> key;
+    <span class="hljs-keyword">var</span> item;
+
+    <span class="hljs-keyword">for</span> (key <span class="hljs-keyword">in</span> source) {
+        <span class="hljs-keyword">if</span> (source.hasOwnProperty(key)) {
+            item = {
+                k: key,
+                v: source[key]
+            };
+            list.push(item);
+        }
+    }
+
+    <span class="hljs-keyword">return</span> list;
+}
+</code></pre>
+
                     
                     </section>
                 
@@ -1064,14 +1111,16 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
         </div>
 
         
+        <a href="yu_yan_te_xing.html" class="navigation navigation-prev " aria-label="Previous page: 语言特性"><i class="fa fa-angle-left"></i></a>
         
-        <a href="chapter1.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 前言" style="margin-right: 17px;"><i class="fa fa-angle-right"></i></a>
+        
+        <a href="tiao_jian.html" class="navigation navigation-next " aria-label="Next page: 条件" style="margin-right: 17px;"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
-    <script src="gitbook/app.js"></script>
+<script src="gitbook/app.js"></script>
 
     
     <script src="gitbook/plugins/gitbook-plugin-comment/plugin.js"></script>

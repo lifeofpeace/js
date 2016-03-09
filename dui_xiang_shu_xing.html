@@ -5,9 +5,9 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>一首小诗 | JavaScript 编码规范</title>
+        <title>对象属性 | JavaScript 编码规范</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="This file file serves as your book&#39;s preface, a great place to describe your book&#39;s content and ideas.">
+        <meta name="description" content="">
         <meta name="generator" content="GitBook 2.5.2">
         <meta name="author" content="itmyhome">
         
@@ -41,8 +41,10 @@
         
     
     
-    <link rel="next" href="chapter1.html" />
+    <link rel="next" href="liu_lan_qi_huan_jing.html" />
     
+    
+    <link rel="prev" href="delete.html" />
     
 
         
@@ -59,14 +61,14 @@ A.info:hover    {color:green;background:transparent;text-decoration:underline}
 </style>
 <!-- <div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
 This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  (Unregistered) on  11/16/15 16:06:39.<br>
-<b>Address:</b> <a class="info" href="https://itmyhome.gitbooks.io/javascript/content/index.html">https://itmyhome.gitbooks.io/javascript/content/index.html</a><br>
-<b>Title:</b> 一首小诗 | JavaScript 编码规范 &nbsp;&bull;&nbsp; <b>Size:</b> 29629 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Mon, 16 Nov 2015 05:18:18 GMT<br></div>
+<b>Address:</b> <a class="info" href="https://itmyhome.gitbooks.io/javascript/content/dui_xiang_shu_xing.html">https://itmyhome.gitbooks.io/javascript/content/dui_xiang_shu_xing.html</a><br>
+<b>Title:</b> 对象属性 | JavaScript 编码规范 &nbsp;&bull;&nbsp; <b>Size:</b> 35159 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Mon, 16 Nov 2015 05:18:18 GMT<br></div>
 <!-- /Copyright � 2005. Spidersoft Ltd -->
 
 
         
         
-    <div class="book" data-level="0" data-chapter-title="一首小诗" data-filepath="README.md" data-basepath="." data-revision="Mon Nov 16 2015 05:18:59 GMT+0000 (UTC)">
+    <div class="book" data-level="3.10.5" data-chapter-title="对象属性" data-filepath="dui_xiang_shu_xing.md" data-basepath="." data-revision="Mon Nov 16 2015 05:18:59 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -88,7 +90,7 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
 
             
     
-        <li class="chapter active" data-level="0" data-path="index.html">
+        <li class="chapter " data-level="0" data-path="index.html">
             
                 
                     <a href="index.html">
@@ -793,7 +795,7 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
             
         </li>
     
-        <li class="chapter " data-level="3.10.5" data-path="dui_xiang_shu_xing.html">
+        <li class="chapter active" data-level="3.10.5" data-path="dui_xiang_shu_xing.html">
             
                 
                     <a href="dui_xiang_shu_xing.html">
@@ -1034,27 +1036,48 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="my-awesome-book">从前慢</h1>
-<p>记得早先少年时</p>
-<p>大家诚诚恳恳</p>
-<p>说一句 是一句</p>
-<p>清早上火车站</p>
-<p>长街黑暗无行人</p>
-<p>卖豆浆的小店冒着热气</p>
-<p>从前的日色变得慢</p>
-<p>车 马 邮件都慢</p>
-<p>一生只够爱一个人</p>
-<p>从前的锁也好看</p>
-<p>钥匙精美有样子</p>
-<p>你锁了</p>
-<p>人家就懂了</p>
-<p>从前的日色变得慢</p>
-<p>车 马 邮件都慢</p>
-<p>一生只够爱一个人</p>
-<p>从前的锁也好看</p>
-<p>钥匙精美有样子</p>
-<p>你锁了</p>
-<p>人家就懂了</p>
+                        <h4 id="3105-&#x5BF9;&#x8C61;&#x5C5E;&#x6027;">3.10.5 &#x5BF9;&#x8C61;&#x5C5E;&#x6027;</h4>
+<h5 id="&#x5EFA;&#x8BAE;-&#x907F;&#x514D;&#x4FEE;&#x6539;&#x5916;&#x90E8;&#x4F20;&#x5165;&#x7684;&#x5BF9;&#x8C61;&#x3002;">[&#x5EFA;&#x8BAE;] &#x907F;&#x514D;&#x4FEE;&#x6539;&#x5916;&#x90E8;&#x4F20;&#x5165;&#x7684;&#x5BF9;&#x8C61;&#x3002;</h5>
+<p>&#x89E3;&#x91CA;&#xFF1A;</p>
+<p>JavaScript &#x56E0;&#x5176;&#x811A;&#x672C;&#x8BED;&#x8A00;&#x7684;&#x52A8;&#x6001;&#x7279;&#x6027;&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x672A;&#x88AB; seal &#x6216; freeze &#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4EFB;&#x610F;&#x6DFB;&#x52A0;&#x3001;&#x5220;&#x9664;&#x3001;&#x4FEE;&#x6539;&#x5C5E;&#x6027;&#x503C;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x968F;&#x610F;&#x5730;&#x5BF9; &#x975E;&#x81EA;&#x8EAB;&#x63A7;&#x5236;&#x7684;&#x5BF9;&#x8C61; &#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x5F88;&#x5BB9;&#x6613;&#x9020;&#x6210;&#x4EE3;&#x7801;&#x5728;&#x4E0D;&#x53EF;&#x9884;&#x77E5;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x51FA;&#x73B0;&#x95EE;&#x9898;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x8BBE;&#x8BA1;&#x826F;&#x597D;&#x7684;&#x7EC4;&#x4EF6;&#x3001;&#x51FD;&#x6570;&#x5E94;&#x8BE5;&#x907F;&#x514D;&#x5BF9;&#x5916;&#x90E8;&#x4F20;&#x5165;&#x7684;&#x5BF9;&#x8C61;&#x7684;&#x4FEE;&#x6539;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x4EE3;&#x7801;&#x7684; selectNode &#x65B9;&#x6CD5;&#x4FEE;&#x6539;&#x4E86;&#x7531;&#x5916;&#x90E8;&#x4F20;&#x5165;&#x7684; datasource &#x5BF9;&#x8C61;&#x3002;&#x5982;&#x679C; datasource &#x7528;&#x5728;&#x5176;&#x5B83;&#x573A;&#x5408;&#xFF08;&#x5982;&#x53E6;&#x4E00;&#x4E2A; Tree &#x5B9E;&#x4F8B;&#xFF09;&#x4E0B;&#xFF0C;&#x4F1A;&#x9020;&#x6210;&#x72B6;&#x6001;&#x7684;&#x6DF7;&#x4E71;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Tree</span>(<span class="hljs-params">datasource</span>) </span>{
+    <span class="hljs-keyword">this</span>.datasource = datasource;
+}
+
+Tree.prototype.selectNode = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">id</span>) </span>{
+    <span class="hljs-comment">// &#x4ECE;datasource&#x4E2D;&#x627E;&#x51FA;&#x8282;&#x70B9;&#x5BF9;&#x8C61;</span>
+    <span class="hljs-keyword">var</span> node = <span class="hljs-keyword">this</span>.findNode(id);
+    <span class="hljs-keyword">if</span> (node) {
+        node.selected = <span class="hljs-literal">true</span>;
+        <span class="hljs-keyword">this</span>.flushView();
+    }
+};
+</code></pre>
+<p>&#x5BF9;&#x4E8E;&#x6B64;&#x7C7B;&#x573A;&#x666F;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x989D;&#x5916;&#x7684;&#x5BF9;&#x8C61;&#x6765;&#x7EF4;&#x62A4;&#xFF0C;&#x4F7F;&#x7528;&#x7531;&#x81EA;&#x8EAB;&#x63A7;&#x5236;&#xFF0C;&#x4E0D;&#x4E0E;&#x5916;&#x90E8;&#x4EA7;&#x751F;&#x4EFB;&#x4F55;&#x4EA4;&#x4E92;&#x7684; selectedNodeIndex &#x5BF9;&#x8C61;&#x6765;&#x7EF4;&#x62A4;&#x8282;&#x70B9;&#x7684;&#x9009;&#x4E2D;&#x72B6;&#x6001;&#xFF0C;&#x4E0D;&#x5BF9; datasource &#x4F5C;&#x4EFB;&#x4F55;&#x4FEE;&#x6539;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Tree</span>(<span class="hljs-params">datasource</span>) </span>{
+    <span class="hljs-keyword">this</span>.datasource = datasource;
+    <span class="hljs-keyword">this</span>.selectedNodeIndex = {};
+}
+
+Tree.prototype.selectNode = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">id</span>) </span>{
+    <span class="hljs-comment">// &#x4ECE;datasource&#x4E2D;&#x627E;&#x51FA;&#x8282;&#x70B9;&#x5BF9;&#x8C61;</span>
+    <span class="hljs-keyword">var</span> node = <span class="hljs-keyword">this</span>.findNode(id);
+    <span class="hljs-keyword">if</span> (node) {
+        <span class="hljs-keyword">this</span>.selectedNodeIndex[id] = <span class="hljs-literal">true</span>;
+        <span class="hljs-keyword">this</span>.flushView();
+    }
+};
+</code></pre>
+<p>&#x9664;&#x6B64;&#x4E4B;&#x5916;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; deepClone &#x7B49;&#x624B;&#x6BB5;&#x5C06;&#x81EA;&#x8EAB;&#x7EF4;&#x62A4;&#x7684;&#x5BF9;&#x8C61;&#x4E0E;&#x5916;&#x90E8;&#x4F20;&#x5165;&#x7684;&#x5206;&#x79BB;&#xFF0C;&#x4FDD;&#x8BC1;&#x4E0D;&#x4F1A;&#x76F8;&#x4E92;&#x5F71;&#x54CD;&#x3002;</p>
+<h5 id="&#x5EFA;&#x8BAE;-&#x5177;&#x5907;&#x5F3A;&#x7C7B;&#x578B;&#x7684;&#x8BBE;&#x8BA1;&#x3002;">[&#x5EFA;&#x8BAE;] &#x5177;&#x5907;&#x5F3A;&#x7C7B;&#x578B;&#x7684;&#x8BBE;&#x8BA1;&#x3002;</h5>
+<p>&#x89E3;&#x91CA;&#xFF1A;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x88AB;&#x8BBE;&#x8BA1;&#x4E3A; boolean &#x7C7B;&#x578B;&#xFF0C;&#x5219;&#x4E0D;&#x8981;&#x4F7F;&#x7528; 1 / 0 &#x4F5C;&#x4E3A;&#x5176;&#x503C;&#x3002;&#x5BF9;&#x4E8E;&#x6807;&#x8BC6;&#x6027;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x5982;&#x5BF9;&#x4EE3;&#x7801;&#x4F53;&#x79EF;&#x6709;&#x4E25;&#x683C;&#x8981;&#x6C42;&#xFF0C;&#x53EF;&#x4EE5;&#x4ECE;&#x4E00;&#x5F00;&#x59CB;&#x5C31;&#x8BBE;&#x8BA1;&#x4E3A; number &#x7C7B;&#x578B;&#x4E14;&#x5C06; 0 &#x4F5C;&#x4E3A;&#x5426;&#x5B9A;&#x503C;&#x3002;</li>
+<li>&#x4ECE; DOM &#x4E2D;&#x53D6;&#x51FA;&#x7684;&#x503C;&#x901A;&#x5E38;&#x4E3A; string &#x7C7B;&#x578B;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x5BF9;&#x8C61;&#x6216;&#x51FD;&#x6570;&#x7684;&#x63A5;&#x6536;&#x7C7B;&#x578B;&#x4E3A; number &#x7C7B;&#x578B;&#xFF0C;&#x63D0;&#x524D;&#x4F5C;&#x597D;&#x8F6C;&#x6362;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x671F;&#x671B;&#x5BF9;&#x8C61;&#x3001;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x591A;&#x7C7B;&#x578B;&#x7684;&#x503C;&#x3002;</li>
+</ul>
+
                     
                     </section>
                 
@@ -1064,14 +1087,16 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
         </div>
 
         
+        <a href="delete.html" class="navigation navigation-prev " aria-label="Previous page: delete"><i class="fa fa-angle-left"></i></a>
         
-        <a href="chapter1.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 前言" style="margin-right: 17px;"><i class="fa fa-angle-right"></i></a>
+        
+        <a href="liu_lan_qi_huan_jing.html" class="navigation navigation-next " aria-label="Next page: 浏览器环境" style="margin-right: 17px;"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
-    <script src="gitbook/app.js"></script>
+<script src="gitbook/app.js"></script>
 
     
     <script src="gitbook/plugins/gitbook-plugin-comment/plugin.js"></script>

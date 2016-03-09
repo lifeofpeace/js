@@ -5,9 +5,9 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>一首小诗 | JavaScript 编码规范</title>
+        <title>DOM 操作 | JavaScript 编码规范</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="This file file serves as your book&#39;s preface, a great place to describe your book&#39;s content and ideas.">
+        <meta name="description" content="">
         <meta name="generator" content="GitBook 2.5.2">
         <meta name="author" content="itmyhome">
         
@@ -41,8 +41,10 @@
         
     
     
-    <link rel="next" href="chapter1.html" />
+    <link rel="next" href="dom_shi_jian.html" />
     
+    
+    <link rel="prev" href="yang_shi_she_zhi.html" />
     
 
         
@@ -58,15 +60,15 @@ A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
 A.info:hover    {color:green;background:transparent;text-decoration:underline}
 </style>
 <!-- <div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
-This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  (Unregistered) on  11/16/15 16:06:39.<br>
-<b>Address:</b> <a class="info" href="https://itmyhome.gitbooks.io/javascript/content/index.html">https://itmyhome.gitbooks.io/javascript/content/index.html</a><br>
-<b>Title:</b> 一首小诗 | JavaScript 编码规范 &nbsp;&bull;&nbsp; <b>Size:</b> 29629 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Mon, 16 Nov 2015 05:18:18 GMT<br></div>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  (Unregistered) on  11/16/15 16:06:40.<br>
+<b>Address:</b> <a class="info" href="https://itmyhome.gitbooks.io/javascript/content/dom_cao_zuo.html">https://itmyhome.gitbooks.io/javascript/content/dom_cao_zuo.html</a><br>
+<b>Title:</b> DOM 操作 | JavaScript 编码规范 &nbsp;&bull;&nbsp; <b>Size:</b> 32362 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Mon, 16 Nov 2015 05:18:18 GMT<br></div>
 <!-- /Copyright � 2005. Spidersoft Ltd -->
 
 
         
         
-    <div class="book" data-level="0" data-chapter-title="一首小诗" data-filepath="README.md" data-basepath="." data-revision="Mon Nov 16 2015 05:18:59 GMT+0000 (UTC)">
+    <div class="book" data-level="4.2.4" data-chapter-title="DOM 操作" data-filepath="dom_cao_zuo.md" data-basepath="." data-revision="Mon Nov 16 2015 05:18:59 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -88,7 +90,7 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
 
             
     
-        <li class="chapter active" data-level="0" data-path="index.html">
+        <li class="chapter " data-level="0" data-path="index.html">
             
                 
                     <a href="index.html">
@@ -961,7 +963,7 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
             
         </li>
     
-        <li class="chapter " data-level="4.2.4" data-path="dom_cao_zuo.html">
+        <li class="chapter active" data-level="4.2.4" data-path="dom_cao_zuo.html">
             
                 
                     <a href="dom_cao_zuo.html">
@@ -1034,27 +1036,25 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="my-awesome-book">从前慢</h1>
-<p>记得早先少年时</p>
-<p>大家诚诚恳恳</p>
-<p>说一句 是一句</p>
-<p>清早上火车站</p>
-<p>长街黑暗无行人</p>
-<p>卖豆浆的小店冒着热气</p>
-<p>从前的日色变得慢</p>
-<p>车 马 邮件都慢</p>
-<p>一生只够爱一个人</p>
-<p>从前的锁也好看</p>
-<p>钥匙精美有样子</p>
-<p>你锁了</p>
-<p>人家就懂了</p>
-<p>从前的日色变得慢</p>
-<p>车 马 邮件都慢</p>
-<p>一生只够爱一个人</p>
-<p>从前的锁也好看</p>
-<p>钥匙精美有样子</p>
-<p>你锁了</p>
-<p>人家就懂了</p>
+                        <h4 id="424-dom-&#x64CD;&#x4F5C;">4.2.4 DOM &#x64CD;&#x4F5C;</h4>
+<h5 id="&#x5EFA;&#x8BAE;-&#x64CD;&#x4F5C;-dom-&#x65F6;&#xFF0C;&#x5C3D;&#x91CF;&#x51CF;&#x5C11;&#x9875;&#x9762;-reflow&#x3002;">[&#x5EFA;&#x8BAE;] &#x64CD;&#x4F5C; <code>DOM</code> &#x65F6;&#xFF0C;&#x5C3D;&#x91CF;&#x51CF;&#x5C11;&#x9875;&#x9762; <code>reflow</code>&#x3002;</h5>
+<p>&#x89E3;&#x91CA;&#xFF1A;</p>
+<p>&#x9875;&#x9762; reflow &#x662F;&#x975E;&#x5E38;&#x8017;&#x65F6;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x975E;&#x5E38;&#x5BB9;&#x6613;&#x5BFC;&#x81F4;&#x6027;&#x80FD;&#x74F6;&#x9888;&#x3002;&#x4E0B;&#x9762;&#x4E00;&#x4E9B;&#x573A;&#x666F;&#x4F1A;&#x89E6;&#x53D1;&#x6D4F;&#x89C8;&#x5668;&#x7684;reflow&#xFF1A;</p>
+<ul>
+<li>DOM&#x5143;&#x7D20;&#x7684;&#x6DFB;&#x52A0;&#x3001;&#x4FEE;&#x6539;&#xFF08;&#x5185;&#x5BB9;&#xFF09;&#x3001;&#x5220;&#x9664;&#x3002;</li>
+<li>&#x5E94;&#x7528;&#x65B0;&#x7684;&#x6837;&#x5F0F;&#x6216;&#x8005;&#x4FEE;&#x6539;&#x4EFB;&#x4F55;&#x5F71;&#x54CD;&#x5143;&#x7D20;&#x5E03;&#x5C40;&#x7684;&#x5C5E;&#x6027;&#x3002;</li>
+<li>Resize&#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3;&#x3001;&#x6EDA;&#x52A8;&#x9875;&#x9762;&#x3002;</li>
+<li>&#x8BFB;&#x53D6;&#x5143;&#x7D20;&#x7684;&#x67D0;&#x4E9B;&#x5C5E;&#x6027;&#xFF08;offsetLeft&#x3001;offsetTop&#x3001;offsetHeight&#x3001;offsetWidth&#x3001;scrollTop/Left/Width/Height&#x3001;clientTop/Left/Width/Height&#x3001;getComputedStyle()&#x3001;currentStyle(in IE)) &#x3002;</li>
+</ul>
+<h5 id="&#x5EFA;&#x8BAE;-&#x5C3D;&#x91CF;&#x51CF;&#x5C11;-dom-&#x64CD;&#x4F5C;&#x3002;">[&#x5EFA;&#x8BAE;] &#x5C3D;&#x91CF;&#x51CF;&#x5C11; <code>DOM</code> &#x64CD;&#x4F5C;&#x3002;</h5>
+<p>&#x89E3;&#x91CA;&#xFF1A;</p>
+<p>DOM &#x64CD;&#x4F5C;&#x4E5F;&#x662F;&#x975E;&#x5E38;&#x8017;&#x65F6;&#x7684;&#x4E00;&#x79CD;&#x64CD;&#x4F5C;&#xFF0C;&#x51CF;&#x5C11; DOM &#x64CD;&#x4F5C;&#x6709;&#x52A9;&#x4E8E;&#x63D0;&#x9AD8;&#x6027;&#x80FD;&#x3002;&#x4E3E;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<ol>
+<li>&#x5728;&#x5FAA;&#x73AF;&#x4F53;&#x4E2D; createElement &#x5E76; append &#x5230;&#x7236;&#x5143;&#x7D20;&#x4E2D;&#x3002;</li>
+<li>&#x5728;&#x5FAA;&#x73AF;&#x4F53;&#x4E2D;&#x62FC;&#x63A5; HTML &#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5FAA;&#x73AF;&#x7ED3;&#x675F;&#x540E;&#x5199;&#x7236;&#x5143;&#x7D20;&#x7684; innerHTML&#x3002;</li>
+</ol>
+<p>&#x7B2C;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x770B;&#x8D77;&#x6765;&#x6BD4;&#x8F83;&#x6807;&#x51C6;&#xFF0C;&#x4F46;&#x662F;&#x6BCF;&#x6B21;&#x5FAA;&#x73AF;&#x90FD;&#x4F1A;&#x5BF9; DOM &#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#xFF0C;&#x6027;&#x80FD;&#x6781;&#x4F4E;&#x3002;&#x5728;&#x8FD9;&#x91CC;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x7B2C;&#x4E8C;&#x79CD;&#x65B9;&#x6CD5;&#x3002;</p>
+
                     
                     </section>
                 
@@ -1064,14 +1064,16 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
         </div>
 
         
+        <a href="yang_shi_she_zhi.html" class="navigation navigation-prev " aria-label="Previous page: 样式设置"><i class="fa fa-angle-left"></i></a>
         
-        <a href="chapter1.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 前言" style="margin-right: 17px;"><i class="fa fa-angle-right"></i></a>
+        
+        <a href="dom_shi_jian.html" class="navigation navigation-next " aria-label="Next page: DOM 事件" style="margin-right: 17px;"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
-    <script src="gitbook/app.js"></script>
+<script src="gitbook/app.js"></script>
 
     
     <script src="gitbook/plugins/gitbook-plugin-comment/plugin.js"></script>

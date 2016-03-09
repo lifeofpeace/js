@@ -5,9 +5,9 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>一首小诗 | JavaScript 编码规范</title>
+        <title>面向对象 | JavaScript 编码规范</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="This file file serves as your book&#39;s preface, a great place to describe your book&#39;s content and ideas.">
+        <meta name="description" content="">
         <meta name="generator" content="GitBook 2.5.2">
         <meta name="author" content="itmyhome">
         
@@ -41,8 +41,10 @@
         
     
     
-    <link rel="next" href="chapter1.html" />
+    <link rel="next" href="dong_tai_te_xing.html" />
     
+    
+    <link rel="prev" href="kong_han_shu.html" />
     
 
         
@@ -59,14 +61,14 @@ A.info:hover    {color:green;background:transparent;text-decoration:underline}
 </style>
 <!-- <div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
 This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  (Unregistered) on  11/16/15 16:06:39.<br>
-<b>Address:</b> <a class="info" href="https://itmyhome.gitbooks.io/javascript/content/index.html">https://itmyhome.gitbooks.io/javascript/content/index.html</a><br>
-<b>Title:</b> 一首小诗 | JavaScript 编码规范 &nbsp;&bull;&nbsp; <b>Size:</b> 29629 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Mon, 16 Nov 2015 05:18:18 GMT<br></div>
+<b>Address:</b> <a class="info" href="https://itmyhome.gitbooks.io/javascript/content/mian_xiang_dui_xiang.html">https://itmyhome.gitbooks.io/javascript/content/mian_xiang_dui_xiang.html</a><br>
+<b>Title:</b> 面向对象 | JavaScript 编码规范 &nbsp;&bull;&nbsp; <b>Size:</b> 37397 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Mon, 16 Nov 2015 05:18:18 GMT<br></div>
 <!-- /Copyright � 2005. Spidersoft Ltd -->
 
 
         
         
-    <div class="book" data-level="0" data-chapter-title="一首小诗" data-filepath="README.md" data-basepath="." data-revision="Mon Nov 16 2015 05:18:59 GMT+0000 (UTC)">
+    <div class="book" data-level="3.9" data-chapter-title="面向对象" data-filepath="mian_xiang_dui_xiang.md" data-basepath="." data-revision="Mon Nov 16 2015 05:18:59 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -88,7 +90,7 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
 
             
     
-        <li class="chapter active" data-level="0" data-path="index.html">
+        <li class="chapter " data-level="0" data-path="index.html">
             
                 
                     <a href="index.html">
@@ -702,7 +704,7 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
             
         </li>
     
-        <li class="chapter " data-level="3.9" data-path="mian_xiang_dui_xiang.html">
+        <li class="chapter active" data-level="3.9" data-path="mian_xiang_dui_xiang.html">
             
                 
                     <a href="mian_xiang_dui_xiang.html">
@@ -1034,27 +1036,75 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="my-awesome-book">从前慢</h1>
-<p>记得早先少年时</p>
-<p>大家诚诚恳恳</p>
-<p>说一句 是一句</p>
-<p>清早上火车站</p>
-<p>长街黑暗无行人</p>
-<p>卖豆浆的小店冒着热气</p>
-<p>从前的日色变得慢</p>
-<p>车 马 邮件都慢</p>
-<p>一生只够爱一个人</p>
-<p>从前的锁也好看</p>
-<p>钥匙精美有样子</p>
-<p>你锁了</p>
-<p>人家就懂了</p>
-<p>从前的日色变得慢</p>
-<p>车 马 邮件都慢</p>
-<p>一生只够爱一个人</p>
-<p>从前的锁也好看</p>
-<p>钥匙精美有样子</p>
-<p>你锁了</p>
-<p>人家就懂了</p>
+                        <h3 id="39-&#x9762;&#x5411;&#x5BF9;&#x8C61;">3.9 &#x9762;&#x5411;&#x5BF9;&#x8C61;</h3>
+<h5 id="&#x5F3A;&#x5236;-&#x7C7B;&#x7684;&#x7EE7;&#x627F;&#x65B9;&#x6848;&#xFF0C;&#x5B9E;&#x73B0;&#x65F6;&#x9700;&#x8981;&#x4FEE;&#x6B63;-constructor&#x3002;">[&#x5F3A;&#x5236;] &#x7C7B;&#x7684;&#x7EE7;&#x627F;&#x65B9;&#x6848;&#xFF0C;&#x5B9E;&#x73B0;&#x65F6;&#x9700;&#x8981;&#x4FEE;&#x6B63; <code>constructor</code>&#x3002;</h5>
+<p>&#x89E3;&#x91CA;&#xFF1A;</p>
+<p>&#x901A;&#x5E38;&#x4F7F;&#x7528;&#x5176;&#x4ED6; library &#x7684;&#x7C7B;&#x7EE7;&#x627F;&#x65B9;&#x6848;&#x90FD;&#x4F1A;&#x8FDB;&#x884C; constructor &#x4FEE;&#x6B63;&#x3002;&#x5982;&#x679C;&#x662F;&#x81EA;&#x5DF1;&#x5B9E;&#x73B0;&#x7684;&#x7C7B;&#x7EE7;&#x627F;&#x65B9;&#x6848;&#xFF0C;&#x9700;&#x8981;&#x8FDB;&#x884C; constructor &#x4FEE;&#x6B63;&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">/**
+ * &#x6784;&#x5EFA;&#x7C7B;&#x4E4B;&#x95F4;&#x7684;&#x7EE7;&#x627F;&#x5173;&#x7CFB;
+ * 
+ * @param {Function} subClass &#x5B50;&#x7C7B;&#x51FD;&#x6570;
+ * @param {Function} superClass &#x7236;&#x7C7B;&#x51FD;&#x6570;
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">inherits</span>(<span class="hljs-params">subClass, superClass</span>) </span>{
+    <span class="hljs-keyword">var</span> F = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Function</span>();
+    F.prototype = superClass.prototype;
+    subClass.prototype = <span class="hljs-keyword">new</span> F();
+    subClass.prototype.constructor = subClass;
+}
+</code></pre>
+<h5 id="&#x5EFA;&#x8BAE;-&#x58F0;&#x660E;&#x7C7B;&#x65F6;&#xFF0C;&#x4FDD;&#x8BC1;-constructor-&#x7684;&#x6B63;&#x786E;&#x6027;&#x3002;">[&#x5EFA;&#x8BAE;] &#x58F0;&#x660E;&#x7C7B;&#x65F6;&#xFF0C;&#x4FDD;&#x8BC1; <code>constructor</code> &#x7684;&#x6B63;&#x786E;&#x6027;&#x3002;</h5>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Animal</span>(<span class="hljs-params">name</span>) </span>{
+    <span class="hljs-keyword">this</span>.name = name;
+}
+
+<span class="hljs-comment">// &#x76F4;&#x63A5;prototype&#x7B49;&#x4E8E;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x4FEE;&#x6B63;constructor</span>
+Animal.prototype = {
+    constructor: Animal,
+
+    jump: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        alert(<span class="hljs-string">&apos;animal &apos;</span> + <span class="hljs-keyword">this</span>.name + <span class="hljs-string">&apos; jump&apos;</span>);
+    }
+};
+
+<span class="hljs-comment">// &#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x6269;&#x5C55;prototype&#x5219;&#x65E0;&#x9700;&#x7406;&#x4F1A;constructor</span>
+Animal.prototype.jump = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    alert(<span class="hljs-string">&apos;animal &apos;</span> + <span class="hljs-keyword">this</span>.name + <span class="hljs-string">&apos; jump&apos;</span>);
+};
+</code></pre>
+<h5 id="&#x5EFA;&#x8BAE;-&#x5C5E;&#x6027;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#x58F0;&#x660E;&#xFF0C;&#x65B9;&#x6CD5;&#x5728;&#x539F;&#x578B;&#x4E2D;&#x58F0;&#x660E;&#x3002;">[&#x5EFA;&#x8BAE;] &#x5C5E;&#x6027;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#x58F0;&#x660E;&#xFF0C;&#x65B9;&#x6CD5;&#x5728;&#x539F;&#x578B;&#x4E2D;&#x58F0;&#x660E;&#x3002;</h5>
+<p>&#x89E3;&#x91CA;&#xFF1A; </p>
+<p>&#x539F;&#x578B;&#x5BF9;&#x8C61;&#x7684;&#x6210;&#x5458;&#x88AB;&#x6240;&#x6709;&#x5B9E;&#x4F8B;&#x5171;&#x4EAB;&#xFF0C;&#x80FD;&#x8282;&#x7EA6;&#x5185;&#x5B58;&#x5360;&#x7528;&#x3002;&#x6240;&#x4EE5;&#x7F16;&#x7801;&#x65F6;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x9075;&#x5B88;&#x8FD9;&#x6837;&#x7684;&#x539F;&#x5219;&#xFF1A;&#x539F;&#x578B;&#x5BF9;&#x8C61;&#x5305;&#x542B;&#x7A0B;&#x5E8F;&#x4E0D;&#x4F1A;&#x4FEE;&#x6539;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x5982;&#x65B9;&#x6CD5;&#x51FD;&#x6570;&#x6216;&#x914D;&#x7F6E;&#x9879;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">TextNode</span>(<span class="hljs-params">value, engine</span>) </span>{
+    <span class="hljs-keyword">this</span>.value = value;
+    <span class="hljs-keyword">this</span>.engine = engine;
+}
+
+TextNode.prototype.clone = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+};
+</code></pre>
+<h5 id="&#x5F3A;&#x5236;-&#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;&#x7684;-&#x4E8B;&#x4EF6;&#x540D;-&#x5FC5;&#x987B;&#x5168;&#x5C0F;&#x5199;&#x3002;">[&#x5F3A;&#x5236;] &#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;&#x7684; <code>&#x4E8B;&#x4EF6;&#x540D;</code> &#x5FC5;&#x987B;&#x5168;&#x5C0F;&#x5199;&#x3002;</h5>
+<p>&#x89E3;&#x91CA;&#xFF1A;</p>
+<p>&#x5728; JavaScript &#x5E7F;&#x6CDB;&#x5E94;&#x7528;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x73AF;&#x5883;&#xFF0C;&#x7EDD;&#x5927;&#x591A;&#x6570; DOM &#x4E8B;&#x4EF6;&#x540D;&#x79F0;&#x90FD;&#x662F;&#x5168;&#x5C0F;&#x5199;&#x7684;&#x3002;&#x4E3A;&#x4E86;&#x9075;&#x5FAA;&#x5927;&#x591A;&#x6570; JavaScript &#x5F00;&#x53D1;&#x8005;&#x7684;&#x4E60;&#x60EF;&#xFF0C;&#x5728;&#x8BBE;&#x8BA1;&#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;&#x65F6;&#xFF0C;&#x4E8B;&#x4EF6;&#x540D;&#x4E5F;&#x5E94;&#x8BE5;&#x5168;&#x5C0F;&#x5199;&#x3002;</p>
+<h5 id="&#x5F3A;&#x5236;-&#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;-event-&#x53C2;&#x6570;&#x3002;&#x5982;&#x679C;&#x4E8B;&#x4EF6;&#x9700;&#x8981;&#x4F20;&#x9012;&#x8F83;&#x591A;&#x4FE1;&#x606F;&#xFF0C;&#x5E94;&#x4ED4;&#x7EC6;&#x8BBE;&#x8BA1;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;&#x3002;">[&#x5F3A;&#x5236;] &#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A; <code>event</code> &#x53C2;&#x6570;&#x3002;&#x5982;&#x679C;&#x4E8B;&#x4EF6;&#x9700;&#x8981;&#x4F20;&#x9012;&#x8F83;&#x591A;&#x4FE1;&#x606F;&#xFF0C;&#x5E94;&#x4ED4;&#x7EC6;&#x8BBE;&#x8BA1;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;&#x3002;</h5>
+<p>&#x89E3;&#x91CA;&#xFF1A;</p>
+<p>&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;&#x7684;&#x597D;&#x5904;&#x6709;&#xFF1A;</p>
+<ol>
+<li>&#x987A;&#x5E8F;&#x65E0;&#x5173;&#xFF0C;&#x907F;&#x514D;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x8005;&#x9700;&#x8981;&#x8BB0;&#x5FC6;&#x53C2;&#x6570;&#x987A;&#x5E8F;&#x3002;</li>
+<li>&#x6BCF;&#x4E2A;&#x4E8B;&#x4EF6;&#x4FE1;&#x606F;&#x90FD;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#x63D0;&#x4F9B;&#x6216;&#x8005;&#x4E0D;&#x63D0;&#x4F9B;&#xFF0C;&#x66F4;&#x81EA;&#x7531;&#x3002;</li>
+<li>&#x6269;&#x5C55;&#x65B9;&#x4FBF;&#xFF0C;&#x672A;&#x6765;&#x6DFB;&#x52A0;&#x4E8B;&#x4EF6;&#x4FE1;&#x606F;&#x65F6;&#xFF0C;&#x65E0;&#x9700;&#x8003;&#x8651;&#x4F1A;&#x7834;&#x574F;&#x76D1;&#x542C;&#x5668;&#x53C2;&#x6570;&#x5F62;&#x5F0F;&#x800C;&#x65E0;&#x6CD5;&#x5411;&#x540E;&#x517C;&#x5BB9;&#x3002;</li>
+</ol>
+<h5 id="&#x5EFA;&#x8BAE;-&#x8BBE;&#x8BA1;&#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;&#x65F6;&#xFF0C;&#x5E94;&#x8003;&#x8651;&#x7981;&#x6B62;&#x9ED8;&#x8BA4;&#x884C;&#x4E3A;&#x3002;">[&#x5EFA;&#x8BAE;] &#x8BBE;&#x8BA1;&#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;&#x65F6;&#xFF0C;&#x5E94;&#x8003;&#x8651;&#x7981;&#x6B62;&#x9ED8;&#x8BA4;&#x884C;&#x4E3A;&#x3002;</h5>
+<p>&#x89E3;&#x91CA;&#xFF1A;</p>
+<p>&#x5E38;&#x89C1;&#x7981;&#x6B62;&#x9ED8;&#x8BA4;&#x884C;&#x4E3A;&#x7684;&#x65B9;&#x5F0F;&#x6709;&#x4E24;&#x79CD;&#xFF1A;</p>
+<ol>
+<li>&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x51FD;&#x6570;&#x4E2D; return false&#x3002;</li>
+<li>&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;&#x4E2D;&#x5305;&#x542B;&#x7981;&#x6B62;&#x9ED8;&#x8BA4;&#x884C;&#x4E3A;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5982; preventDefault&#x3002;</li>
+</ol>
+
                     
                     </section>
                 
@@ -1064,14 +1114,16 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
         </div>
 
         
+        <a href="kong_han_shu.html" class="navigation navigation-prev " aria-label="Previous page: 空函数"><i class="fa fa-angle-left"></i></a>
         
-        <a href="chapter1.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 前言" style="margin-right: 17px;"><i class="fa fa-angle-right"></i></a>
+        
+        <a href="dong_tai_te_xing.html" class="navigation navigation-next " aria-label="Next page: 动态特性" style="margin-right: 17px;"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
-    <script src="gitbook/app.js"></script>
+<script src="gitbook/app.js"></script>
 
     
     <script src="gitbook/plugins/gitbook-plugin-comment/plugin.js"></script>

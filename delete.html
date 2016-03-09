@@ -5,9 +5,9 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>一首小诗 | JavaScript 编码规范</title>
+        <title>delete | JavaScript 编码规范</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="This file file serves as your book&#39;s preface, a great place to describe your book&#39;s content and ideas.">
+        <meta name="description" content="">
         <meta name="generator" content="GitBook 2.5.2">
         <meta name="author" content="itmyhome">
         
@@ -41,8 +41,10 @@
         
     
     
-    <link rel="next" href="chapter1.html" />
+    <link rel="next" href="dui_xiang_shu_xing.html" />
     
+    
+    <link rel="prev" href="with.html" />
     
 
         
@@ -59,14 +61,14 @@ A.info:hover    {color:green;background:transparent;text-decoration:underline}
 </style>
 <!-- <div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
 This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  (Unregistered) on  11/16/15 16:06:39.<br>
-<b>Address:</b> <a class="info" href="https://itmyhome.gitbooks.io/javascript/content/index.html">https://itmyhome.gitbooks.io/javascript/content/index.html</a><br>
-<b>Title:</b> 一首小诗 | JavaScript 编码规范 &nbsp;&bull;&nbsp; <b>Size:</b> 29629 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Mon, 16 Nov 2015 05:18:18 GMT<br></div>
+<b>Address:</b> <a class="info" href="https://itmyhome.gitbooks.io/javascript/content/delete.html">https://itmyhome.gitbooks.io/javascript/content/delete.html</a><br>
+<b>Title:</b> delete | JavaScript 编码规范 &nbsp;&bull;&nbsp; <b>Size:</b> 31460 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Mon, 16 Nov 2015 05:18:17 GMT<br></div>
 <!-- /Copyright � 2005. Spidersoft Ltd -->
 
 
         
         
-    <div class="book" data-level="0" data-chapter-title="一首小诗" data-filepath="README.md" data-basepath="." data-revision="Mon Nov 16 2015 05:18:59 GMT+0000 (UTC)">
+    <div class="book" data-level="3.10.4" data-chapter-title="delete" data-filepath="delete.md" data-basepath="." data-revision="Mon Nov 16 2015 05:18:59 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -88,7 +90,7 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
 
             
     
-        <li class="chapter active" data-level="0" data-path="index.html">
+        <li class="chapter " data-level="0" data-path="index.html">
             
                 
                     <a href="index.html">
@@ -778,7 +780,7 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
             
         </li>
     
-        <li class="chapter " data-level="3.10.4" data-path="delete.html">
+        <li class="chapter active" data-level="3.10.4" data-path="delete.html">
             
                 
                     <a href="delete.html">
@@ -1034,27 +1036,23 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="my-awesome-book">从前慢</h1>
-<p>记得早先少年时</p>
-<p>大家诚诚恳恳</p>
-<p>说一句 是一句</p>
-<p>清早上火车站</p>
-<p>长街黑暗无行人</p>
-<p>卖豆浆的小店冒着热气</p>
-<p>从前的日色变得慢</p>
-<p>车 马 邮件都慢</p>
-<p>一生只够爱一个人</p>
-<p>从前的锁也好看</p>
-<p>钥匙精美有样子</p>
-<p>你锁了</p>
-<p>人家就懂了</p>
-<p>从前的日色变得慢</p>
-<p>车 马 邮件都慢</p>
-<p>一生只够爱一个人</p>
-<p>从前的锁也好看</p>
-<p>钥匙精美有样子</p>
-<p>你锁了</p>
-<p>人家就懂了</p>
+                        <h4 id="3104-delete">3.10.4 delete</h4>
+<h5 id="&#x5EFA;&#x8BAE;-&#x51CF;&#x5C11;-delete-&#x7684;&#x4F7F;&#x7528;&#x3002;">[&#x5EFA;&#x8BAE;] &#x51CF;&#x5C11; <code>delete</code> &#x7684;&#x4F7F;&#x7528;&#x3002;</h5>
+<p>&#x89E3;&#x91CA;&#xFF1A;</p>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x7279;&#x522B;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x51CF;&#x5C11;&#x6216;&#x907F;&#x514D;&#x4F7F;&#x7528;<code>delete</code>&#x3002;<code>delete</code>&#x7684;&#x4F7F;&#x7528;&#x4F1A;&#x7834;&#x574F;&#x90E8;&#x5206; JavaScript &#x5F15;&#x64CE;&#x7684;&#x6027;&#x80FD;&#x4F18;&#x5316;&#x3002;</p>
+<h5 id="&#x5EFA;&#x8BAE;-&#x5904;&#x7406;-delete-&#x53EF;&#x80FD;&#x4EA7;&#x751F;&#x7684;&#x5F02;&#x5E38;&#x3002;">[&#x5EFA;&#x8BAE;] &#x5904;&#x7406; <code>delete</code> &#x53EF;&#x80FD;&#x4EA7;&#x751F;&#x7684;&#x5F02;&#x5E38;&#x3002;</h5>
+<p>&#x89E3;&#x91CA;&#xFF1A;</p>
+<p>&#x5BF9;&#x4E8E;&#x6709;&#x88AB;&#x904D;&#x5386;&#x9700;&#x6C42;&#xFF0C;&#x4E14;&#x503C; null &#x88AB;&#x8BA4;&#x4E3A;&#x5177;&#x6709;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x610F;&#x4E49;&#x7684;&#x503C;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x79FB;&#x9664;&#x67D0;&#x4E2A;&#x5C5E;&#x6027;&#x5FC5;&#x987B;&#x4F7F;&#x7528; delete &#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x5728;&#x4E25;&#x683C;&#x6A21;&#x5F0F;&#x6216;IE&#x4E0B;&#x4F7F;&#x7528; delete &#x65F6;&#xFF0C;&#x4E0D;&#x80FD;&#x88AB;&#x5220;&#x9664;&#x7684;&#x5C5E;&#x6027;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x4E0D;&#x786E;&#x5B9A;&#x5C5E;&#x6027;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x5220;&#x9664;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5EFA;&#x8BAE;&#x6DFB;&#x52A0; try-catch &#x5757;&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">delete</span> o.x;
+}
+<span class="hljs-keyword">catch</span> (deleteError) {
+    o.x = <span class="hljs-literal">null</span>;
+}
+</code></pre>
+
                     
                     </section>
                 
@@ -1064,14 +1062,16 @@ This page was saved using <a class="applink" href="http://www.spidersoft.com"><b
         </div>
 
         
+        <a href="with.html" class="navigation navigation-prev " aria-label="Previous page: with"><i class="fa fa-angle-left"></i></a>
         
-        <a href="chapter1.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 前言" style="margin-right: 17px;"><i class="fa fa-angle-right"></i></a>
+        
+        <a href="dui_xiang_shu_xing.html" class="navigation navigation-next " aria-label="Next page: 对象属性" style="margin-right: 17px;"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
-    <script src="gitbook/app.js"></script>
+<script src="gitbook/app.js"></script>
 
     
     <script src="gitbook/plugins/gitbook-plugin-comment/plugin.js"></script>
